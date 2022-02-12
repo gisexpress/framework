@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F959AE4B-027C-4C04-9A35-3724C93386A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Data.Kml</RootNamespace>
+    <AssemblyName>System.Data.Kml</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KmlPlacemarkCollection.cs" />
+    <Compile Include="KmlPlacemark.cs" />
+    <Compile Include="KmlFileHandlerAttribute.cs" />
+    <Compile Include="KmlMapLayer.cs" />
+    <Compile Include="KmlMapLayerAttribute.cs" />
+    <Compile Include="KmlProject.cs" />
+    <Compile Include="KmlWorkspace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.Base\System.Data.Base.csproj">
+      <Project>{50996028-3dd9-421b-82b7-17596f676f32}</Project>
+      <Name>System.Data.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Geometries\System.Geometries.csproj">
+      <Project>{67143bd2-83bd-45a1-bf3f-8548a35111c3}</Project>
+      <Name>System.Geometries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
+      <Name>System.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Modules\System.Windows.Modules.csproj">
+      <Project>{73F40B12-7E14-460E-9384-80ABD2C0E164}</Project>
+      <Name>System.Windows.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Workspace\System.Workspace.csproj">
+      <Project>{4aaba7b8-e7c5-43cc-816d-96572a79d23c}</Project>
+      <Name>System.Workspace</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Xml\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
