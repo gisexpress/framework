@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System</RootNamespace>
+    <AssemblyName>System.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>DEBUG;TRACE;ReleaseMode</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;DesignMode,DebugMode</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationAppereance.cs" />
+    <Compile Include="ApplicationEnvironment.cs" />
+    <Compile Include="ApplicationFolder.cs" />
+    <Compile Include="ArrayComparison.cs" />
+    <Compile Include="ClientInfo.cs" />
+    <Compile Include="Collections\DictionaryCache.cs" />
+    <Compile Include="Collections\CollectionChangedExtensions.cs" />
+    <Compile Include="Collections\FifoCollection.cs" />
+    <Compile Include="Collections\HashCollection.cs" />
+    <Compile Include="Collections\NameObjectCollection.cs" />
+    <Compile Include="Collections\PropertyCollection.cs" />
+    <Compile Include="Collections\SafeSortedList.cs" />
+    <Compile Include="ComponentModel\Attributes\BinarySerializableAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\ConfigurationValueAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\DataProviderAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\LocalizedCategoryAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\LocalizedDisplayNameAttribute.cs" />
+    <Compile Include="ComponentModel\Attributes\PropertyImageAttribute.cs" />
+    <Compile Include="ComponentModel\Categories.cs" />
+    <Compile Include="ComponentModel\ComponentAction\ComponentAction.cs" />
+    <Compile Include="ComponentModel\ComponentAction\ComponentActionEventArgs.cs" />
+    <Compile Include="ComponentModel\ComponentAction\IComponentAction.cs" />
+    <Compile Include="ComponentModel\ComponentAction\ISupportComponentActions.cs" />
+    <Compile Include="ComponentModel\Converter\LocalizedBooleanConverter.cs" />
+    <Compile Include="ComponentModel\Converter\LocalizedDateTimeConverter.cs" />
+    <Compile Include="ComponentModel\Converter\NumericConverter.cs" />
+    <Compile Include="ComponentModel\Design\ApplicationComponent.cs" />
+    <Compile Include="ComponentModel\Design\ApplicationComponentEditCompletedEventArgs.cs" />
+    <Compile Include="ComponentModel\Design\ApplicationComponentEventArgs.cs" />
+    <Compile Include="ComponentModel\Design\ApplicationComponentPaintEventArgs.cs" />
+    <Compile Include="ComponentModel\Design\ComponentEditCompleteAction.cs" />
+    <Compile Include="ComponentModel\Design\IApplicationComponent.cs" />
+    <Compile Include="ComponentModel\Design\IApplicationComponentDesigner.cs" />
+    <Compile Include="ComponentModel\Design\IApplicationComponentDesignerListener.cs" />
+    <Compile Include="ComponentModel\Design\IApplicationComponentValidator.cs" />
+    <Compile Include="ComponentModel\Dispatcher\SupportDispatcher.cs" />
+    <Compile Include="ComponentModel\EventArgs\ValueChangedEventArgs.cs" />
+    <Compile Include="ComponentModel\ExpandableTypeConverter.cs" />
+    <Compile Include="ComponentModel\IBinarySerializable.cs" />
+    <Compile Include="ComponentModel\IBinarySerializer.cs" />
+    <Compile Include="ComponentModel\IConvertibleStruct.cs" />
+    <Compile Include="ComponentModel\IDispatcher.cs" />
+    <Compile Include="ComponentModel\IEditableDataObject.cs" />
+    <Compile Include="ComponentModel\IEvaluationValue.cs" />
+    <Compile Include="ComponentModel\IImagedList.cs" />
+    <Compile Include="ComponentModel\IPropertyEditor.cs" />
+    <Compile Include="ComponentModel\ISupportDescription.cs" />
+    <Compile Include="ComponentModel\ISupportDispatcher.cs" />
+    <Compile Include="ComponentModel\ISupportFileFilter.cs" />
+    <Compile Include="ComponentModel\ISupportGraphicsPath.cs" />
+    <Compile Include="ComponentModel\ISupportPaint.cs" />
+    <Compile Include="ComponentModel\ISupportEditValue.cs" />
+    <Compile Include="ComponentModel\ISupportReadOnly.cs" />
+    <Compile Include="ComponentModel\ITypeFactory.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\AttributeFilters.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\IPropertyCollection.cs" />
+    <Compile Include="ComponentModel\IPropertyIndexer.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\PropertyNodeCollection.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\PropertyNode.cs" />
+    <Compile Include="ComponentModel\SerializablePropertyComparer.cs" />
+    <Compile Include="ComponentModel\IKeyedObject.cs" />
+    <Compile Include="ComponentModel\RejectableActionList.cs" />
+    <Compile Include="ComponentModel\INullableObject.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\IPropertyDescriptor.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\ISupportPropertyDescriptor.cs" />
+    <Compile Include="ComponentModel\PropertyDescriptor\PropertyDescriptor.cs" />
+    <Compile Include="ComponentModel\TypeFactory.cs" />
+    <Compile Include="Configuration\ApplicationAligmentGuidesSettings.cs" />
+    <Compile Include="Configuration\ApplicationAppearanceSettings.cs" />
+    <Compile Include="Configuration\ApplicationConfiguration.cs" />
+    <Compile Include="Configuration\ApplicationLanguageSettings.cs" />
+    <Compile Include="Configuration\ApplicationRecentListSettings.cs" />
+    <Compile Include="Configuration\ApplicationSecuritySettings.cs" />
+    <Compile Include="Configuration\ApplicationSettings.cs" />
+    <Compile Include="Configuration\ApplicationSnapSettings.cs" />
+    <Compile Include="Configuration\ComponentSetting.cs" />
+    <Compile Include="Configuration\ComponentSettingCollection.cs" />
+    <Compile Include="Configuration\ApplicationConfigurationElement.cs" />
+    <Compile Include="Configuration\ConfigurationNameValueCollection.cs" />
+    <Compile Include="Configuration\RecentPathCollection.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CoordinateSystems\Authority.cs" />
+    <Compile Include="CoordinateSystems\AxisOrientationEnum.cs" />
+    <Compile Include="CoordinateSystems\IAngularUnit.cs" />
+    <Compile Include="CoordinateSystems\IAxisInfo.cs" />
+    <Compile Include="CoordinateSystems\IAxisInfoCollection.cs" />
+    <Compile Include="CoordinateSystems\IBursaWolfParameterCollection.cs" />
+    <Compile Include="CoordinateSystems\ICompoundCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\ICoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\IDatum.cs" />
+    <Compile Include="CoordinateSystems\IEllipsoid.cs" />
+    <Compile Include="CoordinateSystems\IGeocentricCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\IGeographicCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\IHorizontalCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\IHorizontalDatum.cs" />
+    <Compile Include="CoordinateSystems\IInfo.cs" />
+    <Compile Include="CoordinateSystems\ILinearUnit.cs" />
+    <Compile Include="CoordinateSystems\IMathTransform.cs" />
+    <Compile Include="CoordinateSystems\IMathTransform3D.cs" />
+    <Compile Include="CoordinateSystems\IPrimeMeridian.cs" />
+    <Compile Include="CoordinateSystems\IProjectedCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\IProjection.cs" />
+    <Compile Include="CoordinateSystems\IUnit.cs" />
+    <Compile Include="DeveloperEnvironment.cs" />
+    <Compile Include="Diagnostics\AppDiagnostics.cs" />
+    <Compile Include="Drawing\Point3D.cs" />
+    <Compile Include="Drawing\Styles\IconStyle.cs" />
+    <Compile Include="Drawing\Styles\LabelStyle.cs" />
+    <Compile Include="Drawing\Styles\LineStyle.cs" />
+    <Compile Include="Drawing\Styles\PaintStyle.cs" />
+    <Compile Include="Drawing\Styles\PaintStyleCollection.cs" />
+    <Compile Include="Drawing\Styles\PolyStyle.cs" />
+    <Compile Include="Drawing\Styles\Style.cs" />
+    <Compile Include="Drawing\TypeCases.cs" />
+    <Compile Include="EventArgs\DrawTextEventArgs.cs" />
+    <Compile Include="Extensions\Attributes.cs" />
+    <Compile Include="Extensions\DateTime.cs" />
+    <Compile Include="Extensions\DeterminantDouble.cs" />
+    <Compile Include="Extensions\GraphicsPath.cs" />
+    <Compile Include="Extensions\Image.cs" />
+    <Compile Include="Extensions\Matrix.cs" />
+    <Compile Include="Extensions\Point.cs" />
+    <Compile Include="Extensions\Rectangle.cs" />
+    <Compile Include="Extensions\Uri.cs" />
+    <Compile Include="Geometries\Dimension.cs" />
+    <Compile Include="Geometries\GeometryProperty.cs" />
+    <Compile Include="Geometries\GeometryType.cs" />
+    <Compile Include="Geometries\IArc.cs" />
+    <Compile Include="Geometries\IBoundable.cs" />
+    <Compile Include="Geometries\ICircle.cs" />
+    <Compile Include="Geometries\ICoordinate.cs" />
+    <Compile Include="Geometries\ICoordinateCollection.cs" />
+    <Compile Include="Geometries\ICoordinateFilter.cs" />
+    <Compile Include="Geometries\ICurve.cs" />
+    <Compile Include="Geometries\IEllipse.cs" />
+    <Compile Include="Geometries\IEnvelope.cs" />
+    <Compile Include="Geometries\IExpandable.cs" />
+    <Compile Include="Geometries\IGeometry.cs" />
+    <Compile Include="Geometries\IGeometryCollection.cs" />
+    <Compile Include="Geometries\IGeometryComponentFilter.cs" />
+    <Compile Include="Geometries\IGeometryFactory.cs" />
+    <Compile Include="Geometries\IGeometryPropertyDescriptor.cs" />
+    <Compile Include="Geometries\IIntersectable.cs" />
+    <Compile Include="Geometries\ILineal.cs" />
+    <Compile Include="Geometries\ILinearRing.cs" />
+    <Compile Include="Geometries\ILinearRingCollection.cs" />
+    <Compile Include="Geometries\ILineSegment.cs" />
+    <Compile Include="Geometries\ILineString.cs" />
+    <Compile Include="Geometries\IMapTransform.cs" />
+    <Compile Include="Geometries\IMultiCurve.cs" />
+    <Compile Include="Geometries\IMultiLineString.cs" />
+    <Compile Include="Geometries\IMultiPoint.cs" />
+    <Compile Include="Geometries\IMultiPolygon.cs" />
+    <Compile Include="Geometries\Index\IItemVisitor.cs" />
+    <Compile Include="Geometries\Index\ISpatialIndex.cs" />
+    <Compile Include="Geometries\Index\ISpatialObject.cs" />
+    <Compile Include="Geometries\IPoint.cs" />
+    <Compile Include="Geometries\IPointVisitorSettings.cs" />
+    <Compile Include="Geometries\IPolygon.cs" />
+    <Compile Include="Geometries\IPolygonal.cs" />
+    <Compile Include="Geometries\IQuadObject.cs" />
+    <Compile Include="Geometries\IRectangle.cs" />
+    <Compile Include="Geometries\ISupportGeometryProperty.cs" />
+    <Compile Include="Geometries\ISurface.cs" />
+    <Compile Include="Geometries\Location.cs" />
+    <Compile Include="Geometries\MeasuringSystems.cs" />
+    <Compile Include="Geometries\Operation\Buffer\EndCapStyle.cs" />
+    <Compile Include="Geometries\Operation\Buffer\IBufferParameters.cs" />
+    <Compile Include="Geometries\Operation\Buffer\JoinStyle.cs" />
+    <Compile Include="Geometries\PointVisitedEventArgs.cs" />
+    <Compile Include="Geometries\SpatialFunction.cs" />
+    <Compile Include="InternetStatus.cs" />
+    <Compile Include="IO\Compression\Base\Adler.cs" />
+    <Compile Include="IO\Compression\Base\CompressionLevel.cs" />
+    <Compile Include="IO\Compression\Base\CompressionStrategy.cs" />
+    <Compile Include="IO\Compression\Base\CRC32.cs" />
+    <Compile Include="IO\Compression\Base\FlushType.cs" />
+    <Compile Include="IO\Compression\Base\SharedUtils.cs" />
+    <Compile Include="IO\Compression\Base\Tree.cs" />
+    <Compile Include="IO\Compression\CompressionAlgorithms.cs" />
+    <Compile Include="IO\Compression\DeflateCompressionAlgorithm.cs" />
+    <Compile Include="IO\Compression\Deflate\BlockState.cs" />
+    <Compile Include="IO\Compression\Deflate\DeflateFlavor.cs" />
+    <Compile Include="IO\Compression\Deflate\DeflateManager.cs" />
+    <Compile Include="IO\Compression\Deflate\DeflateStream.cs" />
+    <Compile Include="IO\Compression\Deflate\DeflateTree.cs" />
+    <Compile Include="IO\Compression\GZipCompressionAlgorithm.cs" />
+    <Compile Include="IO\Compression\GZip\GZipNativeStream.cs" />
+    <Compile Include="IO\Compression\ICompressionAlgorithm.cs" />
+    <Compile Include="IO\Compression\Inflate\InflateBlocks.cs" />
+    <Compile Include="IO\Compression\Inflate\InflateCodes.cs" />
+    <Compile Include="IO\Compression\Inflate\InflateManager.cs" />
+    <Compile Include="IO\Compression\Inflate\InflateTree.cs" />
+    <Compile Include="IO\Compression\Inflate\InternalConstants.cs" />
+    <Compile Include="IO\Compression\Inflate\InternalInflateConstants.cs" />
+    <Compile Include="IO\Compression\Zip\Zip.cs" />
+    <Compile Include="IO\Compression\Zip\ZipBitFlag.cs" />
+    <Compile Include="IO\Compression\Zip\ZipDateTime.cs" />
+    <Compile Include="IO\Compression\Zip\ZipEncoding.cs" />
+    <Compile Include="IO\Compression\Zip\ZipEntry.cs" />
+    <Compile Include="IO\Compression\Zip\ZipEntryCollection.cs" />
+    <Compile Include="IO\Compression\Zip\ZipHeader.cs" />
+    <Compile Include="IO\Compression\Zip\ZipMethod.cs" />
+    <Compile Include="IO\Compression\Zip\ZipRecordEnd.cs" />
+    <Compile Include="IO\Compression\Zip\ZipStream.cs" />
+    <Compile Include="IO\Compression\Zip\ZipVersion.cs" />
+    <Compile Include="IO\Compression\ZLib\ZlibBaseStream.cs" />
+    <Compile Include="IO\Compression\ZLib\ZlibCodec.cs" />
+    <Compile Include="IO\Compression\ZLib\ZlibConstants.cs" />
+    <Compile Include="IO\Compression\ZLib\ZlibStreamFlavor.cs" />
+    <Compile Include="IO\Tokenizer\CharArray.cs" />
+    <Compile Include="IO\Tokenizer\CharToken.cs" />
+    <Compile Include="IO\Tokenizer\Exceptions\InvalidNumberException.cs" />
+    <Compile Include="IO\Tokenizer\Exceptions\ParserException.cs" />
+    <Compile Include="IO\Tokenizer\Exceptions\UnterminatedQuoteException.cs" />
+    <Compile Include="IO\Tokenizer\ITokenEnumerator.cs" />
+    <Compile Include="IO\Tokenizer\NumberToken.cs" />
+    <Compile Include="IO\Tokenizer\Quotes.cs" />
+    <Compile Include="IO\Tokenizer\QuoteToken.cs" />
+    <Compile Include="IO\Tokenizer\Token.cs" />
+    <Compile Include="IO\Tokenizer\TokenCollection.cs" />
+    <Compile Include="IO\Tokenizer\Tokenizer.cs" />
+    <Compile Include="IO\Tokenizer\WhiteSpaceToken.cs" />
+    <Compile Include="IO\Tokenizer\WordToken.cs" />
+    <Compile Include="Localization\Language.cs" />
+    <Compile Include="Localization\Localization.cs" />
+    <Compile Include="Network.cs" />
+    <Compile Include="OSEnvironment.cs" />
+    <Compile Include="Runtime\AlterOperation.cs" />
+    <Compile Include="Runtime\BinaryOperatorType.cs" />
+    <Compile Include="Runtime\IAggregateFunction.cs" />
+    <Compile Include="Runtime\IAlterOperator.cs" />
+    <Compile Include="Runtime\IBeetweenOperator.cs" />
+    <Compile Include="Runtime\IBinaryOperator.cs" />
+    <Compile Include="Runtime\ICreateOperator.cs" />
+    <Compile Include="Runtime\IDeclareOperator.cs" />
+    <Compile Include="Runtime\IDeleteOperator.cs" />
+    <Compile Include="Runtime\IDropOperator.cs" />
+    <Compile Include="Runtime\IExpressionFunction.cs" />
+    <Compile Include="Runtime\IExpressionFunctionCollection.cs" />
+    <Compile Include="Runtime\IExpressionOperator.cs" />
+    <Compile Include="Runtime\IExpressionOperatorCollection.cs" />
+    <Compile Include="Runtime\IGroupOperator.cs" />
+    <Compile Include="Runtime\IInOperator.cs" />
+    <Compile Include="Runtime\IInsertOperator.cs" />
+    <Compile Include="Runtime\IInstructionEventArgs.cs" />
+    <Compile Include="Runtime\IIsOperator.cs" />
+    <Compile Include="Runtime\IJoinOperator.cs" />
+    <Compile Include="Runtime\ILegacyToStringVisitor.cs" />
+    <Compile Include="Runtime\IOperandMember.cs" />
+    <Compile Include="Runtime\IOperandProperty.cs" />
+    <Compile Include="Runtime\IOrderOperand.cs" />
+    <Compile Include="Runtime\IOrderOperator.cs" />
+    <Compile Include="Runtime\ISelectExpressionOperator.cs" />
+    <Compile Include="Runtime\ISelectExpressionOperatorCollection.cs" />
+    <Compile Include="Runtime\ISelectOperator.cs" />
+    <Compile Include="Runtime\ISupportInstructions.cs" />
+    <Compile Include="Runtime\ISupportMatch.cs" />
+    <Compile Include="Runtime\IUnaryOperator.cs" />
+    <Compile Include="Runtime\IUpdateOperator.cs" />
+    <Compile Include="Runtime\IValueOperand.cs" />
+    <Compile Include="Runtime\IWhereOperator.cs" />
+    <Compile Include="Runtime\MatchTypes.cs" />
+    <Compile Include="Runtime\OperandObjectType.cs" />
+    <Compile Include="Runtime\UnaryOperatorType.cs" />
+    <Compile Include="Security\Crc32.cs" />
+    <Compile Include="Security\LicenseLevel.cs" />
+    <Compile Include="Security\LicenseLevelAttribute.cs" />
+    <Compile Include="Threading\InstanceQueue.cs" />
+    <Compile Include="Threading\InstanceQueueT.cs" />
+    <Compile Include="Transformations\Quaternion.cs" />
+    <Compile Include="UnitConverter\AngularUnits.cs" />
+    <Compile Include="UnitConverter\Conversions.cs" />
+    <Compile Include="UnitConverter\IUnitConverter.cs" />
+    <Compile Include="UnitConverter\LinearUnits.cs" />
+    <Compile Include="UnitConverter\UnitConverter.cs" />
+    <Compile Include="WindowsMessage.cs" />
+    <Compile Include="Drawing\ToolStripItemImageAnimator.cs" />
+    <Compile Include="Drivers.cs" />
+    <Compile Include="Extensions\Color.cs" />
+    <Compile Include="Extensions\Data.cs" />
+    <Compile Include="Extensions\Decimal.cs" />
+    <Compile Include="Extensions\Hash.cs" />
+    <Compile Include="Extensions\PropertyDescriptor.cs" />
+    <Compile Include="Diagnostics\IUnitTest.cs" />
+    <Compile Include="Diagnostics\TokenizerTest.cs" />
+    <Compile Include="Diagnostics\UnitTestAttribute.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extensions\Action.cs" />
+    <Compile Include="Extensions\AppConstants.cs" />
+    <Compile Include="Extensions\BinaryReader.cs" />
+    <Compile Include="Extensions\BinaryWriter.cs" />
+    <Compile Include="Extensions\Bitmap.cs" />
+    <Compile Include="Extensions\Collection.cs" />
+    <Compile Include="Extensions\Control.cs" />
+    <Compile Include="Extensions\Double.cs" />
+    <Compile Include="Extensions\Equality.cs" />
+    <Compile Include="Extensions\Exception.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\Graphics.cs" />
+    <Compile Include="Extensions\IDataReader.cs" />
+    <Compile Include="Extensions\Int32.cs" />
+    <Compile Include="Extensions\IO.cs" />
+    <Compile Include="Threading\ProcessQueue.cs" />
+    <Compile Include="Transactions\ISupportTransactionLog.cs" />
+    <Compile Include="Transactions\ITransactionLog.cs" />
+    <Compile Include="Transactions\ITransactionRecord.cs" />
+    <Compile Include="Transformations\MatrixTransform.cs" />
+    <Compile Include="Extensions\Object.cs" />
+    <Compile Include="Extensions\QueryString.cs" />
+    <Compile Include="Extensions\Single.cs" />
+    <Compile Include="Extensions\Stream.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="Extensions\String.cs" />
+    <Compile Include="Extensions\Types.cs" />
+    <Compile Include="Extensions\XmlReader.cs" />
+    <Compile Include="Extensions\XmlWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extensions\Reflection.cs" />
+    <Compile Include="SerializableColor.cs" />
+    <Compile Include="ComponentModel\IForm.cs" />
+    <Compile Include="Xml\XmlCoordinatesElement.cs" />
+    <Compile Include="Xml\XmlDocumentBase.cs" />
+    <Compile Include="Xml\XmlElementBase.cs" />
+    <Compile Include="Xml\XmlElementCollectionBase.cs" />
+    <Compile Include="Xml\XmlFeatureElementCollection.cs" />
+    <Compile Include="Xml\XmlFeatureElement.cs" />
+    <Compile Include="Xml\XmlFolderElement.cs" />
+    <Compile Include="Xml\XmlGeometryElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizedStrings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

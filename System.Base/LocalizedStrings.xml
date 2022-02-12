@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+	<xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+			<xs:complexType>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="Word" msdata:CaseSensitive="False">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="key" type="xs:string" />
+								<xs:element name="en-US" type="xs:string" minOccurs="0" />
+								<xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:complexType>
+			<xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+				<xs:selector xpath=".//Word" />
+				<xs:field xpath="key" />
+			</xs:unique>
+		</xs:element>
+	</xs:schema>
+	<Word>
+		<key>Name</key>
+		<en-US>Name</en-US>
+		<tr-TR>Ad</tr-TR>
+	</Word>
+	<Word>
+		<key>UserName</key>
+		<en-US>User Name</en-US>
+		<tr-TR>Kullanıcı Adı</tr-TR>
+	</Word>
+	<Word>
+		<key>Password</key>
+		<en-US>Password</en-US>
+		<tr-TR>Şifre</tr-TR>
+	</Word>
+	<Word>
+		<key>DisplayName</key>
+		<en-US>Name</en-US>
+		<tr-TR>Ad</tr-TR>
+	</Word>
+	<Word>
+		<key>Enabled</key>
+		<en-US>Enabled</en-US>
+		<tr-TR>Etkin</tr-TR>
+	</Word>
+	<Word>
+		<key>PolyStyle.Color</key>
+		<en-US>Color</en-US>
+		<tr-TR>Renk</tr-TR>
+	</Word>
+	<Word>
+		<key>PolyStyle.Fill</key>
+		<en-US>Fill</en-US>
+		<tr-TR>Taralı</tr-TR>
+	</Word>
+	<Word>
+		<key>PolyStyle.Outline</key>
+		<en-US>Outline</en-US>
+		<tr-TR>Dış Çizgili</tr-TR>
+	</Word>
+	<Word>
+		<key>PolyStyle.HatchStyle</key>
+		<en-US>HatchStyle</en-US>
+		<tr-TR>Tarama Stili</tr-TR>
+	</Word>
+	<Word>
+		<key>LineStyle.Width</key>
+		<en-US>Line Width</en-US>
+		<tr-TR>Çizgi Kalınlığı</tr-TR>
+	</Word>
+	<Word>
+		<key>LineStyle.LineCap</key>
+		<en-US>Line Cap</en-US>
+		<tr-TR>Çizgi Başlığı</tr-TR>
+	</Word>
+	<Word>
+		<key>LineStyle.LineJoin</key>
+		<en-US>Line Join</en-US>
+		<tr-TR>Çizgi Birşeşimi</tr-TR>
+	</Word>
+	<Word>
+		<key>LineStyle.DashStyle</key>
+		<en-US>Dash Style</en-US>
+		<tr-TR>Çizgi Stili</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle</key>
+		<en-US>Label</en-US>
+		<tr-TR>Etiket</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.Enabled</key>
+		<en-US>Enabled</en-US>
+		<tr-TR>Etkin</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.Outline</key>
+		<en-US>Outline</en-US>
+		<tr-TR>Anahatlı</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.Shadow</key>
+		<en-US>Shadow</en-US>
+		<tr-TR>Gölgeli</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.DesignUnit</key>
+		<en-US>Scale</en-US>
+		<tr-TR>Ölçekle</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.FieldName</key>
+		<en-US>Label Field</en-US>
+		<tr-TR>Etiket Alanı</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.FontColor</key>
+		<en-US>Color</en-US>
+		<tr-TR>Renk</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.FontSize</key>
+		<en-US>Font Size</en-US>
+		<tr-TR>Yazı Boyu</tr-TR>
+	</Word>
+	<Word>
+		<key>LabelStyle.TypeCase</key>
+		<en-US>Type Case</en-US>
+		<tr-TR>Yazım Tipi</tr-TR>
+	</Word>
+	<Word>
+		<key>TypeCases.None</key>
+		<en-US>No change</en-US>
+		<tr-TR>Değişiklik yok</tr-TR>
+	</Word>
+	<Word>
+		<key>TypeCases.UpperCase</key>
+		<en-US>All uppercase</en-US>
+		<tr-TR>Tümü büyük harf</tr-TR>
+	</Word>
+	<Word>
+		<key>TypeCases.LowerCase</key>
+		<en-US>All lowercase</en-US>
+		<tr-TR>Tümü küçük harf</tr-TR>
+	</Word>
+	<Word>
+		<key>TypeCases.TitleCase</key>
+		<en-US>Capitalize first letter</en-US>
+		<tr-TR>Başharfler büyük</tr-TR>
+	</Word>
+	<Word>
+		<key>AngularUnits.Degree</key>
+		<en-US>Degree</en-US>
+		<tr-TR>Derece</tr-TR>
+	</Word>
+	<Word>
+		<key>AngularUnits.Radian</key>
+		<en-US>Radian</en-US>
+		<tr-TR>Radyan</tr-TR>
+	</Word>
+	<Word>
+		<key>AngularUnits.Gradian</key>
+		<en-US>Gradian</en-US>
+		<tr-TR>Grad</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Kilometer</key>
+		<en-US>Kilometer</en-US>
+		<tr-TR>Kilometre</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Meter</key>
+		<en-US>Meter</en-US>
+		<tr-TR>Metre</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Foot</key>
+		<en-US>Foot</en-US>
+		<tr-TR>Ayak</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Inch</key>
+		<en-US>Inch</en-US>
+		<tr-TR>İnç</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Centimeter</key>
+		<en-US>Centimeter</en-US>
+		<tr-TR>Santimetre</tr-TR>
+	</Word>
+	<Word>
+		<key>LinearUnits.Millimeters</key>
+		<en-US>Millimeters</en-US>
+		<tr-TR>Milimetre</tr-TR>
+	</Word>
+	<Word>
+		<key>OK</key>
+		<en-US>OK</en-US>
+		<tr-TR>Tamam</tr-TR>
+	</Word>
+	<Word>
+		<key>Cancel</key>
+		<en-US>Cancel</en-US>
+		<tr-TR>Vazgeç</tr-TR>
+	</Word>
+	<Word>
+		<key>Yes</key>
+		<en-US>Yes</en-US>
+		<tr-TR>Evet</tr-TR>
+	</Word>
+	<Word>
+		<key>No</key>
+		<en-US>No</en-US>
+		<tr-TR>Hayır</tr-TR>
+	</Word>
+	<Word>
+		<key>Abort</key>
+		<en-US>Abort</en-US>
+		<tr-TR>Durdur</tr-TR>
+	</Word>
+	<Word>
+		<key>Retry</key>
+		<en-US>Retry</en-US>
+		<tr-TR>Tekrar dene</tr-TR>
+	</Word>
+	<Word>
+		<key>Ignore</key>
+		<en-US>Ignore</en-US>
+		<tr-TR>Yoksay</tr-TR>
+	</Word>
+	<Word>
+		<key>Save</key>
+		<en-US>Save</en-US>
+		<tr-TR>Sakla</tr-TR>
+	</Word>
+	<Word>
+		<key>Load</key>
+		<en-US>Load</en-US>
+		<tr-TR>Yükle</tr-TR>
+	</Word>
+	<Word>
+		<key>Default</key>
+		<en-US>Default</en-US>
+		<tr-TR>Varsayılan</tr-TR>
+	</Word>
+	<Word>
+		<key>General</key>
+		<en-US>General</en-US>
+		<tr-TR>Genel</tr-TR>
+	</Word>
+	<Word>
+		<key>Appearance</key>
+		<en-US>Appearance</en-US>
+		<tr-TR>Görünüm</tr-TR>
+	</Word>
+	<Word>
+		<key>FileLocation</key>
+		<en-US>File Location</en-US>
+		<tr-TR>Dosya Konumu</tr-TR>
+	</Word>
+	<Word>
+		<key>AllFiles</key>
+		<en-US>All Files</en-US>
+		<tr-TR>Tüm Dosyalar</tr-TR>
+	</Word>
+	<Word>
+		<key>Localization.Name</key>
+		<en-US>Language</en-US>
+		<tr-TR>Dil</tr-TR>
+	</Word>
+	<Word>
+		<key>ReName</key>
+		<en-US>Rename</en-US>
+		<tr-TR>Yeniden Adlandır</tr-TR>
+	</Word>
+	<Word>
+		<key>Add</key>
+		<en-US>Add</en-US>
+		<tr-TR>Ekle</tr-TR>
+	</Word>
+	<Word>
+		<key>Remove</key>
+		<en-US>Remove</en-US>
+		<tr-TR>Sil</tr-TR>
+	</Word>
+	<Word>
+		<key>Map</key>
+		<en-US>Map</en-US>
+		<tr-TR>Harita</tr-TR>
+	</Word>
+	<Word>
+		<key>Theme</key>
+		<en-US>Theme</en-US>
+		<tr-TR>Tema</tr-TR>
+	</Word>
+	<Word>
+		<key>UnexpectedErrorDuringSave</key>
+		<en-US>An unexpected error has occurred during saving the project file.</en-US>
+		<tr-TR>Proje dosyası saklanırken beklenmeyen bir hata oluştu.</tr-TR>
+	</Word>
+	<Word>
+		<key>Measurements</key>
+		<en-US>Measurements</en-US>
+		<tr-TR>Ölçümler</tr-TR>
+	</Word>
+	<Word>
+		<key>Kilometer</key>
+		<en-US>Kilometer</en-US>
+		<tr-TR>Kilometre</tr-TR>
+	</Word>
+	<Word>
+		<key>Meter</key>
+		<en-US>Meter</en-US>
+		<tr-TR>Metre</tr-TR>
+	</Word>
+	<Word>
+		<key>Foot</key>
+		<en-US>Foot</en-US>
+		<tr-TR>Ayak</tr-TR>
+	</Word>
+	<Word>
+		<key>Inch</key>
+		<en-US>Inch</en-US>
+		<tr-TR>inç</tr-TR>
+	</Word>
+	<Word>
+		<key>Centimeter</key>
+		<en-US>Centimeter</en-US>
+		<tr-TR>Santimetre</tr-TR>
+	</Word>
+	<Word>
+		<key>Millimeters</key>
+		<en-US>Millimeters</en-US>
+		<tr-TR>Milimetre</tr-TR>
+	</Word>
+	<Word>
+		<key>Other</key>
+		<en-US>Other</en-US>
+		<tr-TR>Diğer</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Monday</key>
+		<en-US>Monday</en-US>
+		<tr-TR>Pazartesi</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Tuesday</key>
+		<en-US>Tuesday</en-US>
+		<tr-TR>Salı</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Wednesday</key>
+		<en-US>Wednesday</en-US>
+		<tr-TR>Çarşamba</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Thursday</key>
+		<en-US>Thursday</en-US>
+		<tr-TR>Perşembe</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Friday</key>
+		<en-US>Friday</en-US>
+		<tr-TR>Cuma</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Saturday</key>
+		<en-US>Saturday</en-US>
+		<tr-TR>Cumartesi</tr-TR>
+	</Word>
+	<Word>
+		<key>Days.Sunday</key>
+		<en-US>Sunday</en-US>
+		<tr-TR>Pazar</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Monday</key>
+		<en-US>Mon</en-US>
+		<tr-TR>Pzt</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Tuesday</key>
+		<en-US>Tue</en-US>
+		<tr-TR>Sal</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Wednesday</key>
+		<en-US>Wed</en-US>
+		<tr-TR>Çar</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Thursday</key>
+		<en-US>Thu</en-US>
+		<tr-TR>Per</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Friday</key>
+		<en-US>Frd</en-US>
+		<tr-TR>Cum</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Saturday</key>
+		<en-US>Sat</en-US>
+		<tr-TR>Cts</tr-TR>
+	</Word>
+	<Word>
+		<key>ShortDays.Sunday</key>
+		<en-US>Sun</en-US>
+		<tr-TR>Paz</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.January</key>
+		<en-US>January</en-US>
+		<tr-TR>Ocak</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.February</key>
+		<en-US>February</en-US>
+		<tr-TR>Şubat</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.March</key>
+		<en-US>March</en-US>
+		<tr-TR>Mart</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.April</key>
+		<en-US>April</en-US>
+		<tr-TR>Nisan</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.May</key>
+		<en-US>May</en-US>
+		<tr-TR>Mayıs</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.June</key>
+		<en-US>June</en-US>
+		<tr-TR>Haziran</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.July</key>
+		<en-US>July</en-US>
+		<tr-TR>Temmuz</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.August</key>
+		<en-US>August</en-US>
+		<tr-TR>Ağustos</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.September</key>
+		<en-US>September</en-US>
+		<tr-TR>Eylül</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.October</key>
+		<en-US>October</en-US>
+		<tr-TR>Ekim</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.November</key>
+		<en-US>November</en-US>
+		<tr-TR>Kasım</tr-TR>
+	</Word>
+	<Word>
+		<key>Months.December</key>
+		<en-US>December</en-US>
+		<tr-TR>Aralık</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.None</key>
+		<en-US>None</en-US>
+		<tr-TR>Hiçbiri</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Horizontal</key>
+		<en-US>Horizontal</en-US>
+		<tr-TR>Yatay</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Vertical</key>
+		<en-US>Vertical</en-US>
+		<tr-TR>Dikey</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.ForwardDiagonal</key>
+		<en-US>Diagonal (Forward)</en-US>
+		<tr-TR>Çapraz (İleri)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.BackwardDiagonal</key>
+		<en-US>Diagonal (Backward)</en-US>
+		<tr-TR>Çapraz (Geri)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Cross</key>
+		<en-US>Cross</en-US>
+		<tr-TR>Çapraz</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DiagonalCross</key>
+		<en-US>Diagonal Cross</en-US>
+		<tr-TR>Diyagonal Çapraz</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent05</key>
+		<en-US>Percent 5</en-US>
+		<tr-TR>Yüzde 5</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent10</key>
+		<en-US>Percent 10</en-US>
+		<tr-TR>Yüzde 10</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent20</key>
+		<en-US>Percent 20</en-US>
+		<tr-TR>Yüzde 20</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent25</key>
+		<en-US>Percent 25</en-US>
+		<tr-TR>Yüzde 25</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent30</key>
+		<en-US>Percent 30</en-US>
+		<tr-TR>Yüzde 30</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent40</key>
+		<en-US>Percent 40</en-US>
+		<tr-TR>Yüzde 40</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent50</key>
+		<en-US>Percent 50</en-US>
+		<tr-TR>Yüzde 50</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent60</key>
+		<en-US>Percent 60</en-US>
+		<tr-TR>Yüzde 60</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent70</key>
+		<en-US>Percent 70</en-US>
+		<tr-TR>Yüzde 70</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent75</key>
+		<en-US>Percent 75</en-US>
+		<tr-TR>Yüzde 75</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent80</key>
+		<en-US>Percent 80</en-US>
+		<tr-TR>Yüzde 80</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Percent90</key>
+		<en-US>Percent 90</en-US>
+		<tr-TR>Yüzde 90</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LightDownwardDiagonal</key>
+		<en-US>Downward Diagonal (Light)</en-US>
+		<tr-TR>Aşağı Diyagonal (Açık)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LightUpwardDiagonal</key>
+		<en-US>Upward Diagonal (Light)</en-US>
+		<tr-TR>Yukarı Diyagonal (Açık)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DarkDownwardDiagonal</key>
+		<en-US>Downward Diagonal (Dark)</en-US>
+		<tr-TR>Aşağı Diyagonal (Koyu)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DarkUpwardDiagonal</key>
+		<en-US>Upward Diagonal (Dark)</en-US>
+		<tr-TR>Yukarı Diyagonal (Koyu)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.WideDownwardDiagonal</key>
+		<en-US>Downward Diagonal (Wide)</en-US>
+		<tr-TR>Aşağı Diyagonal (Geniş)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.WideUpwardDiagonal</key>
+		<en-US>Upward Diagonal (Wide)</en-US>
+		<tr-TR>Yukarı Diyagonal (Geniş)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LightVertical</key>
+		<en-US>Vertical (Light)</en-US>
+		<tr-TR>Dikey (Açık)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LightHorizontal</key>
+		<en-US>Horizontal (Light)</en-US>
+		<tr-TR>Yatay (Açık)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.NarrowVertical</key>
+		<en-US>Vertical (Narrow)</en-US>
+		<tr-TR>Dikey (Dar)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.NarrowHorizontal</key>
+		<en-US>Horizontal (Narrow)</en-US>
+		<tr-TR>Yatay (Dar)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DarkVertical</key>
+		<en-US>Vertical (Dark)</en-US>
+		<tr-TR>Dikey (Koyu)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DarkHorizontal</key>
+		<en-US>Horizontal (Dark)</en-US>
+		<tr-TR>Yatay (Koyu)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DashedDownwardDiagonal</key>
+		<en-US>Downward Diagonal (Dashed)</en-US>
+		<tr-TR>Aşağı Diyagonal (Kesik)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DashedUpwardDiagonal</key>
+		<en-US>Upward Diagonal (Dashed)</en-US>
+		<tr-TR>Yukarı Diyagonal (Kesik)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DashedHorizontal</key>
+		<en-US>Horizontal (Dashed)</en-US>
+		<tr-TR>Yatay (Kesik)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DashedVertical</key>
+		<en-US>Vertical (Dashed)</en-US>
+		<tr-TR>Dikey (Kesik)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.SmallConfetti</key>
+		<en-US>Confetti (Small)</en-US>
+		<tr-TR>Konfeti (Küçük)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LargeConfetti</key>
+		<en-US>Confetti (Large)</en-US>
+		<tr-TR>Konfeti (Büyük)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.ZigZag</key>
+		<en-US>ZigZag</en-US>
+		<tr-TR>ZikZak</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Wave</key>
+		<en-US>Wave</en-US>
+		<tr-TR>Dalga</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DiagonalBrick</key>
+		<en-US>Brick (Diagonal)</en-US>
+		<tr-TR>Tuğla (Diyagonal)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.HorizontalBrick</key>
+		<en-US>Brick (Horizontal)</en-US>
+		<tr-TR>Tuğla (Yatay)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Weave</key>
+		<en-US>Weave</en-US>
+		<tr-TR>Dokuma</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Plaid</key>
+		<en-US>Plaid</en-US>
+		<tr-TR>Ekoseli</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Divot</key>
+		<en-US>Divot</en-US>
+		<tr-TR>Çimen</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DottedGrid</key>
+		<en-US>Dotted (Grid)</en-US>
+		<tr-TR>Noktalı (Izgara)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.DottedDiamond</key>
+		<en-US>Dotted (Diamond)</en-US>
+		<tr-TR>Noktalı (Karo)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Shingle</key>
+		<en-US>Shingle</en-US>
+		<tr-TR>Çakıl</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Trellis</key>
+		<en-US>Trellis</en-US>
+		<tr-TR>Kafes</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.Sphere</key>
+		<en-US>Sphere</en-US>
+		<tr-TR>Küre</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.SmallGrid</key>
+		<en-US>Grid (Small)</en-US>
+		<tr-TR>Izgara (Küçük)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.SmallCheckerBoard</key>
+		<en-US>CheckerBoard (Small)</en-US>
+		<tr-TR>Dama (Küçük)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.LargeCheckerBoard</key>
+		<en-US>CheckerBoard (Large)</en-US>
+		<tr-TR>Dama (Büyük)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.OutlinedDiamond</key>
+		<en-US>Diamond (Outlined)</en-US>
+		<tr-TR>Karo (Dış çizgili)</tr-TR>
+	</Word>
+	<Word>
+		<key>HatchStyle.SolidDiamond</key>
+		<en-US>Diamond (Solid)</en-US>
+		<tr-TR>Karo (Dolgulu)</tr-TR>
+	</Word>
+	<Word>
+		<key>LineCap.Flat</key>
+		<en-US>Flat</en-US>
+		<tr-TR>Düz</tr-TR>
+	</Word>
+	<Word>
+		<key>LineCap.Round</key>
+		<en-US>Round</en-US>
+		<tr-TR>Yuvarlak</tr-TR>
+	</Word>
+	<Word>
+		<key>LineCap.Square</key>
+		<en-US>Square</en-US>
+		<tr-TR>Kare</tr-TR>
+	</Word>
+	<Word>
+		<key>DashStyle.Solid</key>
+		<en-US>Solid</en-US>
+		<tr-TR>Düz</tr-TR>
+	</Word>
+	<Word>
+		<key>DashStyle.Dash</key>
+		<en-US>Dash</en-US>
+		<tr-TR>Tire</tr-TR>
+	</Word>
+	<Word>
+		<key>DashStyle.Dot</key>
+		<en-US>Dot</en-US>
+		<tr-TR>Nokta</tr-TR>
+	</Word>
+	<Word>
+		<key>DashStyle.DashDot</key>
+		<en-US>Dash Dot</en-US>
+		<tr-TR>Tire Nokta</tr-TR>
+	</Word>
+	<Word>
+		<key>DashStyle.DashDotDot</key>
+		<en-US>Dash Dot Dot</en-US>
+		<tr-TR>Tire Nokta Nokta</tr-TR>
+	</Word>
+	<Word>
+		<key>SpecifyValidFileName</key>
+		<en-US>Specify a valid file name</en-US>
+		<tr-TR>Geçerli bir dosya ismi belirtin</tr-TR>
+	</Word>
+	<Word>
+		<key>IncorrectSyntaxException</key>
+		<en-US>Incorrect syntax near '{0}'.</en-US>
+		<tr-TR>'{0}' yakınında hatalı sözdizimi.</tr-TR>
+	</Word>
+	<Word>
+		<key>ConnectionIsClosed</key>
+		<en-US>The connection's current state is closed</en-US>
+		<tr-TR>Bağlantının geçerli durumu kapalı</tr-TR>
+	</Word>
+	<Word>
+		<key>ConnectionWasNotClosed</key>
+		<en-US>The connection was not closed the connection's current state is open</en-US>
+		<tr-TR>Bağlantı kapalı değil, bağlantının mevcut durumu açık</tr-TR>
+	</Word>
+</LocalizedStrings>
