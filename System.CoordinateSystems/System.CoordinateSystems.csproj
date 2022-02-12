@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9BAA5A6-9C7C-414A-B1C6-733B77417A9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.CoordinateSystems</RootNamespace>
+    <AssemblyName>System.CoordinateSystems</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AxisInfo.cs" />
+    <Compile Include="AxisInfoCollection.cs" />
+    <Compile Include="Base\Info.cs" />
+    <Compile Include="Base\PrimeMeridian.cs" />
+    <Compile Include="CoordinateSystems\CoordinateSystem.Factory.cs" />
+    <Compile Include="CoordinateSystems\CompoundCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\CoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\GeocentricCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\GeographicCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\HorizontalCoordinateSystem.cs" />
+    <Compile Include="CoordinateSystems\ProjectedCoordinateSystem.cs" />
+    <Compile Include="Datum\Datum.cs" />
+    <Compile Include="Datum\HorizontalDatum.cs" />
+    <Compile Include="Diagnostics\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipsoid\Ellipsoid.cs" />
+    <Compile Include="Epsg\Database\EpsgDatabase.cs" />
+    <Compile Include="Epsg\EpsgRecord.cs" />
+    <Compile Include="Epsg\EpsgRecordCollection.cs" />
+    <Compile Include="Epsg\EpsgSerializer.cs" />
+    <Compile Include="Epsg\EpsgTable.cs" />
+    <Compile Include="Epsg\Extensions.cs" />
+    <Compile Include="Epsg\IEpsgTable.cs" />
+    <Compile Include="Epsg\ISupportEpsgDataSource.cs" />
+    <Compile Include="Epsg\Table\Alias\EpsgAliasRecord.cs" />
+    <Compile Include="Epsg\Table\Alias\EpsgAliasTable.cs" />
+    <Compile Include="Epsg\Table\Area\EpsgAreaRecord.cs" />
+    <Compile Include="Epsg\Table\Area\EpsgAreaTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Axis Name\EpsgCoordinateAxisNameRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Axis Name\EpsgCoordinateAxisNameTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Axis\EpsgCoordinateAxisRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Axis\EpsgCoordinateAxisTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\BursaWolfParameterCollection.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\EpsgCoordinateOperationRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\EpsgCoordinateOperationTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Method\MethodRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Method\MethodTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Parameter\ParameterRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Parameter\ParameterTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Usage\ParameterUsageRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Usage\ParameterUsageTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Value\ParameterValueRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Operation\Value\ParameterValueTable.cs" />
+    <Compile Include="Epsg\Table\Coordinate Reference System\CoordinateReferenceSystemRecord.cs" />
+    <Compile Include="Epsg\Table\Coordinate Reference System\CoordinateReferenceSystemTable.cs" />
+    <Compile Include="Epsg\Table\Datum\EpsgDatumRecord.cs" />
+    <Compile Include="Epsg\Table\Datum\EpsgDatumTable.cs" />
+    <Compile Include="Epsg\Table\Ellipsoid\EpsgEllipsoidRecord.cs" />
+    <Compile Include="Epsg\Table\Ellipsoid\EpsgEllipsoidTable.cs" />
+    <Compile Include="Epsg\Table\EpsgTableCollection.cs" />
+    <Compile Include="Epsg\Table\Prime Meridian\EpsgPrimeMeridianRecord.cs" />
+    <Compile Include="Epsg\Table\Prime Meridian\EpsgPrimeMeridianTable.cs" />
+    <Compile Include="Epsg\Table\Unit of Measure\EpsgUnit.cs" />
+    <Compile Include="Epsg\Table\Unit of Measure\EpsgUnitOfMeasureKind.cs" />
+    <Compile Include="Epsg\Table\Unit of Measure\EpsgUnitOfMeasureRecord.cs" />
+    <Compile Include="Epsg\Table\Unit of Measure\EpsgUnitOfMeasureTable.cs" />
+    <Compile Include="Projection\Classes\AffineProjection.cs" />
+    <Compile Include="Projection\Classes\DatumTransform.cs" />
+    <Compile Include="Projection\Classes\GeocentricTransform.cs" />
+    <Compile Include="Projection\Classes\GeographicTransform.cs" />
+    <Compile Include="Projection\Classes\Mercator.cs" />
+    <Compile Include="Projection\Classes\TransverseMercator.cs" />
+    <Compile Include="Projection\Projection.cs" />
+    <Compile Include="Projection\ProjectionFactory.cs" />
+    <Compile Include="Projection\ProjectionParameter.cs" />
+    <Compile Include="Projection\ProjectionParameterCollection.cs" />
+    <Compile Include="Projection\ProjectionParameterKind.cs" />
+    <Compile Include="Projection\Transformations\ConcatenatedTransform.cs" />
+    <Compile Include="Diagnostics\CoordinateSystemTest.cs" />
+    <Compile Include="CoordinateSystemFactory.cs" />
+    <Compile Include="EpsgResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EpsgResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Transformations\MathTransform.cs" />
+    <Compile Include="Transformations\Matrix.cs" />
+    <Compile Include="Unit\AngularUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unit\LinearUnit.cs" />
+    <Compile Include="BursaWolfParameterCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Epsg\EPSG_v8_9.gz" />
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Diagnostics\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EpsgResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>EpsgResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
