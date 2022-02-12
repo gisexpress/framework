@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AABA7B8-E7C5-43CC-816D-96572A79D23C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Workspace</RootNamespace>
+    <AssemblyName>System.Workspace</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing\DirectBitmap.cs" />
+    <Compile Include="Drawing\MapGraphicsFrame.cs" />
+    <Compile Include="MapFeature.cs" />
+    <Compile Include="MapLayerAttribute.cs" />
+    <Compile Include="MapLayerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Drawing\PaintLayerIconEventArgs.cs" />
+    <Compile Include="Drawing\MapGraphics.cs" />
+    <Compile Include="EventArgs\FeatureDrawEventHandler.cs" />
+    <Compile Include="EventArgs\RenderCompletedEventArgs.cs" />
+    <Compile Include="EventArgs\RenderProgressChangedEventArgs.cs" />
+    <Compile Include="MapLayer.cs" />
+    <Compile Include="MapLayerCollection.cs" />
+    <Compile Include="MapLayerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapLayerSelection.cs" />
+    <Compile Include="MapWorkspace.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Drawing\MapCanvas.cs" />
+    <Compile Include="TileProvider\MapTile.cs" />
+    <Compile Include="TileProvider\MapTileProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.CoordinateSystems\System.CoordinateSystems.csproj">
+      <Project>{b9baa5a6-9c7c-414a-b1c6-733b77417a9d}</Project>
+      <Name>System.CoordinateSystems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Data.Base\System.Data.Base.csproj">
+      <Project>{50996028-3dd9-421b-82b7-17596f676f32}</Project>
+      <Name>System.Data.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Geometries\System.Geometries.csproj">
+      <Project>{67143bd2-83bd-45a1-bf3f-8548a35111c3}</Project>
+      <Name>System.Geometries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+      <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
+      <Name>System.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.Base\System.Windows.Forms.Base.csproj">
+      <Project>{a48ff71b-cfbd-47e9-86b0-58a6d73bc333}</Project>
+      <Name>System.Windows.Forms.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.ColorEdit\System.Windows.Forms.ColorEdit.csproj">
+      <Project>{d773b0fc-9749-4971-bd1b-eee439d884e5}</Project>
+      <Name>System.Windows.Forms.ColorEdit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizedStrings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

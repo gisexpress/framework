@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+	<xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+			<xs:complexType>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="Word" msdata:CaseSensitive="False">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="key" type="xs:string" />
+								<xs:element name="en-US" type="xs:string" minOccurs="0" />
+								<xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:complexType>
+			<xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+				<xs:selector xpath=".//Word" />
+				<xs:field xpath="key" />
+			</xs:unique>
+		</xs:element>
+	</xs:schema>
+	<Word>
+		<key>Category</key>
+		<en-US>Category</en-US>
+		<tr-TR>Kategori</tr-TR>
+	</Word>
+	<Word>
+		<key>Layer</key>
+		<en-US>Layer</en-US>
+		<tr-TR>Katman</tr-TR>
+	</Word>
+	<Word>
+		<key>Layers</key>
+		<en-US>Layers</en-US>
+		<tr-TR>Katmanlar</tr-TR>
+	</Word>
+	<Word>
+		<key>LayerName</key>
+		<en-US>Layer Name</en-US>
+		<tr-TR>Katman Adı</tr-TR>
+	</Word>
+	<Word>
+		<key>Description</key>
+		<en-US>Description</en-US>
+		<tr-TR>Açıklama</tr-TR>
+	</Word>
+	<Word>
+		<key>StyleUrl</key>
+		<en-US>Style</en-US>
+		<tr-TR>Stil</tr-TR>
+	</Word>
+</LocalizedStrings>
