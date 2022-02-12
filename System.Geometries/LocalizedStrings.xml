@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>Topology</key>
+    <en-US>Topology</en-US>
+    <tr-TR>Topoloji</tr-TR>
+  </Word>
+  <Word>
+    <key>Transformation.Translate</key>
+    <en-US>Move</en-US>
+    <tr-TR>Taşı</tr-TR>
+  </Word>
+  <Word>
+    <key>Transformation.Scale</key>
+    <en-US>Scale</en-US>
+    <tr-TR>Ölçekle</tr-TR>
+  </Word>
+  <Word>
+    <key>Transformation.Rotate</key>
+    <en-US>Rotate</en-US>
+    <tr-TR>Döndür</tr-TR>
+  </Word>
+  <Word>
+    <key>Geometry</key>
+    <en-US>Geometry</en-US>
+    <tr-TR>Geometri</tr-TR>
+  </Word>
+  <Word>
+    <key>LineString</key>
+    <en-US>Line</en-US>
+    <tr-TR>Çizgi</tr-TR>
+  </Word>
+  <Word>
+    <key>LineSegment</key>
+    <en-US>Line Segment</en-US>
+    <tr-TR>Çizgi Bölümü</tr-TR>
+  </Word>
+  <Word>
+    <key>02C3863098B6461E92F7D70FAA74C64A</key>
+    <en-US>X</en-US>
+    <tr-TR>X</tr-TR>
+  </Word>
+  <Word>
+    <key>AD8AB705E8184F89808741C368B90FCC</key>
+    <en-US>Y</en-US>
+    <tr-TR>Y</tr-TR>
+  </Word>
+  <Word>
+    <key>BF908AFA2ED84A4DB0C18E54DD07D628</key>
+    <en-US>Altitude</en-US>
+    <tr-TR>Rakım</tr-TR>
+  </Word>
+  <Word>
+    <key>D3510B4007D24DC8A61EC7314CBE135B</key>
+    <en-US>Area</en-US>
+    <tr-TR>Alan</tr-TR>
+  </Word>
+  <Word>
+    <key>8E3EA7C57FB64F03A5A8E72AC4FAA431</key>
+    <en-US>Angle</en-US>
+    <tr-TR>Açı</tr-TR>
+  </Word>
+  <Word>
+    <key>19DEC5FD21F94F72B53A8C82DACD0D54</key>
+    <en-US>Azimuth</en-US>
+    <tr-TR>Azimut</tr-TR>
+  </Word>
+  <Word>
+    <key>05FBF85E967849D585A34E43199CBA4D</key>
+    <en-US>Length</en-US>
+    <tr-TR>Uzunluk</tr-TR>
+  </Word>
+  <Word>
+    <key>D9349B1AB9DF4E94BF278C5FD393B6E0</key>
+    <en-US>Perimeter</en-US>
+    <tr-TR>Çevre</tr-TR>
+  </Word>
+  <Word>
+    <key>ED1DEBEED318409D8506F83B69C3D6F9</key>
+    <en-US>Width</en-US>
+    <tr-TR>En</tr-TR>
+  </Word>
+  <Word>
+    <key>C94C65985DDC4689AF3A355950DCDD4C</key>
+    <en-US>Height</en-US>
+    <tr-TR>Boy</tr-TR>
+  </Word>
+  <Word>
+    <key>B8E62A6B40394433AD1B746D9362413C</key>
+    <en-US>Radius</en-US>
+    <tr-TR>Yarıçap</tr-TR>
+  </Word>
+  <Word>
+    <key>44FA5B3BF9F34536B08E8248E66A8AE6</key>
+    <en-US>Start Angle</en-US>
+    <tr-TR>Başlangıç Açısı</tr-TR>
+  </Word>
+  <Word>
+    <key>C5794260F9554ABE90A885EC839736E7</key>
+    <en-US>Sweep Angle</en-US>
+    <tr-TR>Süpürme Açısı</tr-TR>
+  </Word>
+  <Word>
+    <key>502EDC367DE449AFA13F98E546F7E5C3</key>
+    <en-US>Angle</en-US>
+    <tr-TR>Açı</tr-TR>
+  </Word>
+  <Word>
+    <key>4B55110BD69F4473B984345739DCD193</key>
+    <en-US>Angle</en-US>
+    <tr-TR>Açı</tr-TR>
+  </Word>
+  <Word>
+    <key>9B7C56C108B540AC8FFFA72AFBCC4824</key>
+    <en-US>Length</en-US>
+    <tr-TR>Uzunluk</tr-TR>
+  </Word>
+  <Word>
+    <key>A01B4C737369479DBDD1F2244ADC99C4</key>
+    <en-US>Length</en-US>
+    <tr-TR>Uzunluk</tr-TR>
+  </Word>
+  <Word>
+    <key>74B23A024CA04A0189EBDFD7E7006EF6</key>
+    <en-US>Number of Points</en-US>
+    <tr-TR>Nokta Sayısı</tr-TR>
+  </Word>
+  <Word>
+    <key>1CB2FF79DDBD4AACB09CB2CF11E1CAE0</key>
+    <en-US>Offset</en-US>
+    <tr-TR>Ofset</tr-TR>
+  </Word>
+  <Word>
+    <key>F206328121954EBC8D7A8E5EDD6420A2</key>
+    <en-US>Horizontal Offset</en-US>
+    <tr-TR>Yatay Ofset</tr-TR>
+  </Word>
+  <Word>
+    <key>F46DBD1824404A67AA23B21DAF5DC118</key>
+    <en-US>Vertical Offset</en-US>
+    <tr-TR>Dikey Ofset</tr-TR>
+  </Word>
+  <Word>
+    <key>909C5794BDD747BDA376F518787CCD13</key>
+    <en-US>Offset</en-US>
+    <tr-TR>Ofset</tr-TR>
+  </Word>
+  <Word>
+    <key>3718CDA7978047ECA53C1623718C5799</key>
+    <en-US>Scale</en-US>
+    <tr-TR>Ölçek</tr-TR>
+  </Word>
+  <Word>
+    <key>F6B2E234E292438CB1F87D410C94155F</key>
+    <en-US>Horizontal Scale</en-US>
+    <tr-TR>Yatay Ölçek</tr-TR>
+  </Word>
+  <Word>
+    <key>86D304CC247847DC89278E7344AFD9A0</key>
+    <en-US>Vertical Scale</en-US>
+    <tr-TR>Dikey Ölçek</tr-TR>
+  </Word>
+  <Word>
+    <key>610537B3E7854E49B8DB1776A97E8F80</key>
+    <en-US>Offset</en-US>
+    <tr-TR>Ofset</tr-TR>
+  </Word>
+  <Word>
+    <key>549960DB1DA64168A52B7C31FA603503</key>
+    <en-US>Rotation Angle</en-US>
+    <tr-TR>Dönme Açısı</tr-TR>
+  </Word>
+  <Word>
+    <key>6E19472BAB6F42BF966FEF6C01507371</key>
+    <en-US>Distance</en-US>
+    <tr-TR>Mesafe</tr-TR>
+  </Word>
+  <Word>
+    <key>Buffer</key>
+    <en-US>Buffer</en-US>
+    <tr-TR>Tampon</tr-TR>
+  </Word>
+  <Word>
+    <key>Buffer.Description</key>
+    <en-US>Generates a geometry by encircling a geometry at a specified distance</en-US>
+    <tr-TR>Belirtilen mesafe ile bir geometriyi çevreleyen yeni bir geometri oluştur</tr-TR>
+  </Word>
+  <Word>
+    <key>BufferWidthHeight.Description</key>
+    <en-US>Generates a geometry by encircling &lt;b&gt;a point&lt;/b&gt; at a specified width and height</en-US>
+    <tr-TR>Belirtilen genişlik yükseklik ile &lt;b&gt;bir noktayı&lt;/b&gt; çevreleyen yeni bir geometri oluştur</tr-TR>
+  </Word>
+  <Word>
+    <key>JoinStyle.Round</key>
+    <en-US>Round</en-US>
+    <tr-TR>Yuvarlak</tr-TR>
+  </Word>
+  <Word>
+    <key>JoinStyle.Miter</key>
+    <en-US>Miter</en-US>
+    <tr-TR>Gönyeli</tr-TR>
+  </Word>
+  <Word>
+    <key>JoinStyle.Bevel</key>
+    <en-US>Bevel</en-US>
+    <tr-TR>Eğik</tr-TR>
+  </Word>
+  <Word>
+    <key>EndCapStyle.Round</key>
+    <en-US>Round</en-US>
+    <tr-TR>Yuvarlak</tr-TR>
+  </Word>
+  <Word>
+    <key>EndCapStyle.Flat</key>
+    <en-US>Flat</en-US>
+    <tr-TR>Düz</tr-TR>
+  </Word>
+  <Word>
+    <key>EndCapStyle.Square</key>
+    <en-US>Square</en-US>
+    <tr-TR>Kare</tr-TR>
+  </Word>
+  <Word>
+    <key>BufferLineJoin.Description</key>
+    <en-US>Specifies how to join consecutive line or curve segments</en-US>
+    <tr-TR>Çizgi veya eğri parçalarının nasıl birleşeceğini belirler</tr-TR>
+  </Word>
+  <Word>
+    <key>1548C7BD8E7B40DBB583BF70571A7C84</key>
+    <en-US>Width</en-US>
+    <tr-TR>Genişlik</tr-TR>
+  </Word>
+  <Word>
+    <key>A6CBC58413674E64B15F7AA41BA71A6E</key>
+    <en-US>Height</en-US>
+    <tr-TR>Yükseklik</tr-TR>
+  </Word>
+  <Word>
+    <key>FBBE57985DAD4295A28FCB4C54930DE5</key>
+    <en-US>Line Join Style</en-US>
+    <tr-TR>Çizgi Birleşim Stili</tr-TR>
+  </Word>
+  <Word>
+    <key>5B10CBC703BE4E83B82C93D6AC4C57B7</key>
+    <en-US>Cap Style</en-US>
+    <tr-TR>Başlık Stili</tr-TR>
+  </Word>
+  <Word>
+    <key>64BDBAE6BD5E4DFF9D0541C95E382FAC</key>
+    <en-US>Tolerance</en-US>
+    <tr-TR>Hata Payı</tr-TR>
+  </Word>
+  <Word>
+    <key>F24482996D2040EE9D666BF890A74D9D</key>
+    <en-US>WKT</en-US>
+    <tr-TR>WKT</tr-TR>
+  </Word>
+  <Word>
+    <key>MeasuringSystems</key>
+    <en-US>Measuring System</en-US>
+    <tr-TR>Ölçüm Sistemi</tr-TR>
+  </Word>
+  <!--<Word>
+    <key>MeasuringSystems.Polar</key>
+    <en-US>Polar</en-US>
+    <tr-TR>Kutupsal</tr-TR>
+  </Word>-->
+  <Word>
+    <key>MeasuringSystems.NorthAzimuth</key>
+    <en-US>North Azimuth</en-US>
+    <tr-TR>Kuzey Azimut</tr-TR>
+  </Word>
+  <Word>
+    <key>MeasuringSystems.SouthAzimuth</key>
+    <en-US>South Azimuth</en-US>
+    <tr-TR>Güney Azimut</tr-TR>
+  </Word>
+  <Word>
+    <key>MeasuringSystems.SolarAzimuth</key>
+    <en-US>Solar Azimuth</en-US>
+    <tr-TR>Solar Azimut</tr-TR>
+  </Word>
+  <!--<Word>
+    <key>MeasuringSystems.QuadrantBearing</key>
+    <en-US>Quadrant Bearing</en-US>
+    <tr-TR>Çeyrek Daire</tr-TR>
+  </Word>-->
+</LocalizedStrings>
