@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAAA95CF-14C5-4194-A036-3762E45BE743}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Resources</RootNamespace>
+    <AssemblyName>System.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Files.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Files.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Images016.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images016.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Images032.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images032.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Images048.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images048.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImagesCustom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImagesCustom.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Files.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Files.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images048.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images048.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images032.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images032.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images016.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Images016.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images016\ArrowLeft.png" />
+    <Content Include="Images016\ArrowRight.png" />
+    <Content Include="Images016\ArrowUp.png" />
+    <Content Include="Images016\Document.png" />
+    <Content Include="Images016\File.png" />
+    <Content Include="Images016\LangEn.png" />
+    <Content Include="Images016\LangTr.png" />
+    <None Include="Files\Customers.csv" />
+    <None Include="Files\Employees.csv" />
+    <None Include="Files\OrderDetails.csv" />
+    <None Include="Files\Orders.csv" />
+    <None Include="Files\Shippers.csv" />
+    <None Include="GISExpress.snk" />
+    <None Include="Images032\Desktop.png" />
+    <None Include="Images032\DriveFixed.png" />
+    <None Include="Images032\Folder.png" />
+    <None Include="Images032\UserFolder.png" />
+    <Content Include="Images016\Refresh.png" />
+    <None Include="Images048\SpatialTable.png" />
+    <None Include="Images032\DriveCDRom.png" />
+    <None Include="Images032\DriveRemovable.png" />
+    <Content Include="Images048\CheckedUser.png" />
+    <Content Include="ImagesCustom\Background.jpg" />
+    <Content Include="ImagesCustom\Cover.png" />
+    <Content Include="ImagesCustom\Logo.png" />
+    <Content Include="ImagesCustom\Banner.png" />
+    <Content Include="Images016\Add.png" />
+    <Content Include="Images016\AddDataColumn.png" />
+    <Content Include="Images016\AddRow.png" />
+    <Content Include="Images016\ApplicationMenu.png" />
+    <Content Include="Images016\Cancel.png" />
+    <Content Include="Images016\Checked.png" />
+    <Content Include="Images016\Copy.png" />
+    <Content Include="Images016\DefineLocation.png" />
+    <Content Include="Images016\DeleteRow.png" />
+    <Content Include="Images016\DownArrow.png" />
+    <Content Include="Images016\EditProperty.png" />
+    <None Include="Images016\ExistingItem.png" />
+    <Content Include="Images016\Fit.png" />
+    <Content Include="Images016\Geography.png" />
+    <Content Include="Images016\Grid.png" />
+    <Content Include="Images016\GuideLine.png" />
+    <Content Include="Images016\Help.png" />
+    <Content Include="Images016\MapTileLayer.png" />
+    <None Include="Images016\NewItem.png" />
+    <Content Include="Images016\OpenFolder.png" />
+    <Content Include="Images016\Key.png" />
+    <Content Include="Images016\Properties.png" />
+    <Content Include="Images016\RadioChecked.png" />
+    <Content Include="Images016\RadioUnchecked.png" />
+    <Content Include="Images016\Remove.png" />
+    <Content Include="Images016\Save.png" />
+    <Content Include="Images016\SortAscending.png" />
+    <Content Include="Images016\Centre.png" />
+    <Content Include="Images016\CollapseNode.png" />
+    <Content Include="Images016\DataColumn.png" />
+    <Content Include="Images016\Delete.png" />
+    <Content Include="Images016\DeselectAll.png" />
+    <Content Include="Images016\Synchronize.png" />
+    <Content Include="Images016\TopView.png" />
+    <Content Include="Images016\Unchecked.png" />
+    <Content Include="Images016\WindowClose.png" />
+    <Content Include="Images016\WindowMaximize.png" />
+    <Content Include="Images016\WindowMinimize.png" />
+    <Content Include="Images016\WindowRestore.png" />
+    <Content Include="Images016\WorldLocation.png" />
+    <Content Include="Images032\CollectThinBlue.png" />
+    <Content Include="Images032\Error.png" />
+    <Content Include="Images032\GisExpress.png" />
+    <Content Include="Images032\Help.png" />
+    <Content Include="Images048\Access.png" />
+    <Content Include="Images048\Dxf.png" />
+    <Content Include="Images048\GoogleMaps.png" />
+    <Content Include="Images048\Kml.png" />
+    <Content Include="Images048\Logo.png" />
+    <Content Include="Images048\Shp.png" />
+    <Content Include="Images048\SqlServer.png" />
+    <None Include="Images048\Tif.png" />
+    <None Include="Images016\Expand.png" />
+    <Content Include="Images016\ExpandNode.png" />
+    <None Include="Images016\NewFolder.png" />
+    <None Include="Images016\First.png" />
+    <Content Include="Images016\Info.png" />
+    <None Include="Images016\Last.png" />
+    <Content Include="Images016\List.png" />
+    <Content Include="Images016\Lock.png" />
+    <Content Include="Images016\NewDatabase.png" />
+    <Content Include="Images016\NewWindow.png" />
+    <None Include="Images016\Next.png" />
+    <None Include="Images016\NextPage.png" />
+    <None Include="Images016\Previous.png" />
+    <None Include="Images016\PreviousPage.png" />
+    <Content Include="Images016\Redo.png" />
+    <Content Include="Images016\Rename.png" />
+    <Content Include="Images016\ReverseSelection.png" />
+    <Content Include="Images016\SelectAll.png" />
+    <Content Include="Images016\SortDescending.png" />
+    <Content Include="Images016\Undo.png" />
+    <Content Include="Images016\UpArrow.png" />
+    <Content Include="Images016\Wait.gif" />
+    <Content Include="Images016\WaitDisabled.GIF" />
+    <None Include="Images032\AddGeometry.png" />
+    <None Include="Images032\CollectGreen.png" />
+    <None Include="Images032\CollectGray.png" />
+    <Content Include="Images032\Arc.png" />
+    <Content Include="Images032\Cancel.png" />
+    <Content Include="Images032\Circle.png" />
+    <Content Include="Images032\Copy.png" />
+    <Content Include="Images032\Cut.png" />
+    <Content Include="Images032\Delete.png" />
+    <Content Include="Images032\Difference.png" />
+    <Content Include="Images032\Directions.png" />
+    <Content Include="Images032\DirectionsGray.png" />
+    <Content Include="Images032\Ellipse.png" />
+    <None Include="Images032\Intersection.png" />
+    <Content Include="Images032\LinesToPolygon.png" />
+    <Content Include="Images032\MultiSelect.png" />
+    <Content Include="Images032\Paste.png" />
+    <Content Include="Images032\Point.png" />
+    <Content Include="Images032\Rectangle.png" />
+    <Content Include="Images032\SelectArea.png" />
+    <Content Include="Images032\SelectRect.png" />
+    <None Include="Images032\SymmetricDifference.png" />
+    <Content Include="Images032\Split.png" />
+    <Content Include="Images032\Union.png" />
+    <Content Include="Images048\SplashTile.png" />
+    <None Include="Images016\Layers.png" />
+    <None Include="Images016\Folder.png" />
+    <None Include="Images016\AddFile.png" />
+    <None Include="Images016\CancelFile.png" />
+    <Content Include="Images016\Database.png" />
+    <Content Include="Images016\DataSet.png" />
+    <Content Include="Images016\FolderClosed.png" />
+    <Content Include="Images016\FolderOpen.png" />
+    <Content Include="Images016\OpenFile.png" />
+    <None Include="Images016\SaveAll.png" />
+    <Content Include="Images016\DataTable.png" />
+    <Content Include="Images016\ZoomIn.png" />
+    <Content Include="Images016\ZoomOut.png" />
+    <Content Include="Images016\ZoomWindow.png" />
+    <Content Include="Images032\AddFile.png" />
+    <Content Include="Images032\CancelFile.png" />
+    <Content Include="Images032\Select.png" />
+    <Content Include="Images032\Cursor.png" />
+    <Content Include="Images032\Exit.png" />
+    <Content Include="Images032\Expand.png" />
+    <Content Include="Images032\OpenFile.png" />
+    <Content Include="Images032\Polygon.png" />
+    <Content Include="Images032\Polyline.png" />
+    <Content Include="Images032\Save.png" />
+    <Content Include="Images032\SaveAll.png" />
+    <Content Include="Images032\SaveAs.png" />
+    <Content Include="Images032\Settings.png" />
+    <EmbeddedResource Include="ImagesCustom.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImagesCustom.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Files\Products.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
