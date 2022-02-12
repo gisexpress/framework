@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{59F3A0AF-34B4-48F5-A0F0-7DF2CC666D4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Data.Dxf</RootNamespace>
+    <AssemblyName>System.Data.Dxf</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diagnostics\DxfTest.cs" />
+    <Compile Include="DxfCommand.cs" />
+    <Compile Include="DxfConnection.cs" />
+    <Compile Include="DxfDataType.cs" />
+    <Compile Include="DxfProviderAttribute.cs" />
+    <Compile Include="DxfDataReader.cs" />
+    <Compile Include="DxfInformationSchema.cs" />
+    <Compile Include="DxfProvider.cs" />
+    <Compile Include="IO\DxfDocument.cs" />
+    <Compile Include="IO\DxfObject.cs" />
+    <Compile Include="IO\DxfReader.cs" />
+    <Compile Include="IO\Sections\Blocks\DxfBlock.cs" />
+    <Compile Include="IO\Sections\Classes\DxfClass.cs" />
+    <Compile Include="IO\Sections\Blocks\DxfBlocksSection.cs" />
+    <Compile Include="IO\Sections\Classes\DxfClassesSection.cs" />
+    <Compile Include="IO\Sections\DxfSectionName.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbArc.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbBlockReference.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbCircle.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbEllipse.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbLine.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbObject.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbPolyline.cs" />
+    <Compile Include="IO\Sections\Entities\AcDbPolylineFlag.cs" />
+    <Compile Include="IO\Sections\Entities\DxfEntitiesSection.cs" />
+    <Compile Include="IO\Sections\DxfObjectsSection.cs" />
+    <Compile Include="IO\Sections\Tables\AcDbLayerTableRecord.cs" />
+    <Compile Include="IO\Sections\Tables\AcDbTableRecord.cs" />
+    <Compile Include="IO\Sections\Tables\DxfTable.cs" />
+    <Compile Include="IO\Sections\Tables\DxfTablesSection.cs" />
+    <Compile Include="IO\Sections\DxfThumbnailImageSection.cs" />
+    <Compile Include="IO\Sections\Entities\DxfLayer.cs" />
+    <Compile Include="IO\Sections\Header\DxfHeaderSection.cs" />
+    <Compile Include="IO\Sections\DxfSection.cs" />
+    <Compile Include="IO\Sections\DxfSectionCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IO\Sections\Header\DxfHeaderVariable.cs" />
+    <Compile Include="IO\Sections\Header\DxfHeaderVariables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Diagnostics\HouseDesign.dxf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Data.Core\System.Data.Base.csproj">
+      <Project>{50996028-3DD9-421B-82B7-17596F676F32}</Project>
+      <Name>System.Data.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Extensions\System.Core.csproj">
+      <Project>{657109EF-7A80-4CF3-AF6C-FE192F99A7F6}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Geometries\System.Geometries.csproj">
+      <Project>{67143BD2-83BD-45A1-BF3F-8548A35111C3}</Project>
+      <Name>System.Geometries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Resources\System.Resources.csproj">
+      <Project>{baaa95cf-14c5-4194-a036-3762e45be743}</Project>
+      <Name>System.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Runtime\System.Runtime.csproj">
+      <Project>{DD70CC97-CA8F-407F-B60D-2F01ECE7942E}</Project>
+      <Name>System.Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
