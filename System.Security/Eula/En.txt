@@ -1,0 +1,117 @@
+GISEXPRESS ® END-USER LICENSE AGREEMENT
+FOR ALL SOFTWARE DEVELOPMENT PRODUCT(S) INCLUDED IN THIS DISTRIBUTION
+
+IMPORTANT - PLEASE READ THIS END-USER LICENSE AGREEMENT (“AGREEMENT”) CAREFULLY BEFORE DOWNLOADING OR USING THE SOFTWARE DEVELOPMENT PRODUCT(S) INCLUDED IN THIS DISTRIBUTION/INSTALLATION.
+
+This GISEXPRESS AGREEMENT constitutes a legally binding agreement between you or the business and/or entity which you represent ("You" or "LICENSEE") and GISEXPRESS for all GISEXPRESS products, frameworks, widgets, source code, demos, intermediate files, media, printed materials, and documentation ("SOFTWARE PRODUCT(S)") included in this distribution/installation.
+
+By purchasing, installing, copying, or otherwise using the SOFTWARE PRODUCT(S), you acknowledge that you have read this AGREEMENT and you agree to be bound by its terms and conditions. If you are representing a business and/or entity, you acknowledge that you have the legal authority to bind the business and/or entity you are representing to all the terms and conditions of this AGREEMENT.
+
+If you do not agree to any of the terms and conditions of this AGREEMENT or if you do not have the legal authority to bind the business and/or entity you are representing to any of the terms and conditions of this AGREEMENT, DO NOT INSTALL, COPY, USE, EVALUATE, OR REPLICATE IN ANY MANNER, ANY PART, FILE OR PORTION OF THE SOFTWARE PRODUCT(S).
+
+All SOFTWARE DEVELOPMENT PRODUCT(S) IS LICENSED, NOT SOLD.
+
+1. GRANT OF LICENSE
+
+Subject to all the terms and conditions of this AGREEMENT, GISEXPRESS grants LICENSEE a non-exclusive, non-transferable license to install and use.
+
+1.1 INDIVIDUAL USE
+
+If you are an individual, you may install, copy, and use the SOFTWARE PRODUCT(S) by purchasing a subscription from http://www.gisexpress.net/en or its authorized resellers, in accordance with Section 8 of this AGREEMENT.
+
+1.2 BUSINESS AND GOVERNMENT USE
+
+If you represent a business and/or government entity, you or your employees may install, copy, and use the SOFTWARE PRODUCT(S) by purchasing a subscription from GISEXPRESS or its authorized resellers for each user using the SOFTWARE PRODUCT(S), in accordance with Section 8 of this AGREEMENT. 
+
+The number of licensed users using the SOFTWARE PRODUCT(S) must equal or be less than the number of seats purchased from GISEXPRESS or its authorized resellers.
+
+1.3 COMPLIMENTARY USE
+
+If the SOFTWARE PRODUCT(S) you have obtained is marked as "COMPLIMENTARY" or "FREE", you may install, and use the SOFTWARE PRODUCT(S).
+GISEXPRESS reserves the right to discontinue at its discretion and without advance notice, the availability of COMPLIMENTARY or FREE versions of the SOFTWARE PRODUCT(S) or its constituent parts at any time.
+
+1.4 EVALUATION (TRIAL) USE
+
+If the SOFTWARE PRODUCT(S) you have obtained is marked as a "TRIAL" or "EVALUATION," you may install one copy of the SOFTWARE PRODUCT(S) for evaluation purposes only, until the end of the specified period from the date of installation ("EVALUATION PERIOD"). Upon expiration of the EVALUATION PERIOD, the SOFTWARE PRODUCT(S) must be uninstalled and all copies destroyed.
+
+2. LIMITATIONS ON REVERSE ENGINEERING, DECOMPILATION, AND DISASSEMBLY
+
+You may not reverse engineer, decompile, create derivative works or disassemble the SOFTWARE PRODUCT(S). If the SOFTWARE PRODUCT(S) is purchased by you with the intent to reverse engineer, decompile, create derivative works, or the exploitation and unauthorized transfer of any GISEXPRESS intellectual property and trade secrets, to include any exposed methods or source code where provided, no licensed right of use shall exist and any PRODUCT(s) created as a result shall be judged illegal by definition. Any sale or resale of intellectual property or created derivatives so obtained will be prosecuted to the fullest extent of all local, local and international law.
+
+3. SEPARATION OF COMPONENTS
+
+The SOFTWARE PRODUCT(S) is licensed as a single PRODUCT(S). The SOFTWARE PRODUCT(S) and its constituent parts and any provided redistributables may not be reverse engineered, decompiled, disassembled or separated for use on more than one computer, nor placed for distribution, sale, or resale as individual creations by LICENSEE. The provision of source code, if included with the SOFTWARE PRODUCT(S), does not constitute transfer of any legal rights to such code, and resale or distribution of all or any portion of all source code and intellectual property will be prosecuted to the fullest extent of all applicable local, local and international laws. All GISEXPRESS libraries, source code, redistributables and other files remain GISEXPRESS's exclusive property. You may not distribute any files, except those that GISEXPRESS has expressly designated as REDISTRIBUTABLE(S).
+
+4. RENTAL
+
+You may not rent, lease, or lend the SOFTWARE PRODUCT(S).
+
+5. TRANSFER
+
+You may NOT permanently or temporarily transfer ANY of your rights under this AGREEMENT to any individual or business or government entity without prior written approval from GISEXPRESS. You may not share copies of the Redistributables with other users. You may not reproduce or distribute any GISEXPRESS documentation without the permission of GISEXPRESS.
+
+6. REDISTRIBUTION
+
+The LICENSEE may NOT distribute the SOFTWARE PRODUCT(S), in any format.
+
+7. COPYRIGHT
+
+All title and copyrights in and to the SOFTWARE PRODUCT(S) (including but not limited to any GISEXPRESS trademarks, copywritten images, demos, source code, intermediate files, packages, photographs, redistributables, animations, video, audio, music, text, and "applets" incorporated into the SOFTWARE PRODUCT(S) the accompanying printed materials, and any copies of the SOFTWARE PRODUCT(S)) are owned by GISEXPRESS or its subsidiaries.
+
+The SOFTWARE PRODUCT(S) is protected by copyright laws and international treaty provisions and therefore, you must treat the SOFTWARE PRODUCT(S) like any other copyrighted material except that you may install and use the SOFTWARE PRODUCT(S) as described in this AGREEMENT.
+
+8. SUBSCRIPTION AND UPDATES
+
+GISEXPRESS licenses the SOFTWARE PRODUCT(S) on a subscription basis.
+
+A subscription lasts for a 12 month period from the date of purchase. LICENSEE will be eligible to receive all major and minor updates for the SOFTWARE PRODUCT(S) during this 12 month period. 
+
+Upon expiration of a subscription, LICENSEE can optionally renew the SOFTWARE PRODUCT(S) subscription for an additional 12 month period (and each subsequent year thereafter) in order to continue receiving major and minor updates of the SOFTWARE PRODUCT(S) from GISEXPRESS.
+
+Pricing for the 12 month SOFTWARE PRODUCT(S) subscription and any subsequent renewal of the subscription are listed on http://gisexpress.net/en and subject to change with or without notice.
+
+GISEXPRESS reserves the right to discontinue the SOFTWARE PRODUCT(S) or its constituents, at any time.
+
+9. DOWNLOAD of SOFTWARE PRODUCT(S)
+
+The SOFTWARE PRODUCT(S) will be made available for download from http://gisexpress.net exclusively.
+
+10. EXPORT RESTRICTIONS
+
+GISEXPRESS expressly complies with all export restrictions imposed by the government of the Republic of TURKEY.
+
+11. DISCLAIMER OF WARRANTY
+
+GISEXPRESS expressly disclaims any warranty for the SOFTWARE PRODUCT(S).
+THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE PRODUCT(S) REMAINS WITH YOU.
+
+12. LIMITATIONS ON LIABILITY
+
+To the maximum extent permitted by applicable law, in no event shall GISEXPRESS be liable for any special, incidental, indirect, or consequential damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use the SOFTWARE PRODUCT(S) or the provision of or failure to provide SUPPORT SERVICES, even if GISEXPRESS has been advised of the possibility of such damages.
+
+Your sole remedy and GISEXPRESS'S sole obligation shall be governed by this agreement and in no event shall GISEXPRESS'S liability exceed the price paid to GISEXPRESS for the SOFTWARE PRODUCT(S).
+
+This Limited Warranty is void if failure of the SOFTWARE PRODUCT(S) has resulted from accident, abuse, alteration, unauthorized use or misapplication of the SOFTWARE PRODUCT(S).
+
+13. TERMINATION
+
+Without prejudice to any other rights or remedies, GISEXPRESS will terminate this AGREEMENT upon your failure to comply with all the terms and conditions of this AGREEMENT. In such events, LICENSEE must destroy all copies of the SOFTWARE PRODUCT(S) and all of its component parts including any related documentation, and must remove ANY and ALL use of GISEXPRESS intellectual property from any applications distributed by LICENSEE, whether in native, altered or compiled states.
+
+14. PERSONAL DATA
+
+GISEXPRESS may collect and store information to help identify usage and defects within its SOFTWARE PRODUCT(S) and to verify LICENSEE's compliance with the terms of this AGREEMENT. GISEXPRESS does not lend, lease, sell, or share personally identifiable information it obtains from you. GISEXPRESS does not disclose purchase information or licensing information to third parties.
+
+15. MISCELLANEOUS
+
+This AGREEMENT shall be construed, interpreted and governed by the laws of the Republic of TURKEY. This AGREEMENT gives you specific legal rights; you may have others that vary from country to country.
+
+This AGREEMENT may only be modified in writing signed by you and an authorized officer of GISEXPRESS. If any provision of this AGREEMENT is found void or unenforceable, the remainder will remain valid and enforceable according to its terms.
+
+GISEXPRESS RESERVES ALL RIGHTS NOT SPECIFICALLY GRANTED IN THIS AGREEMENT.
+
+Should you have any questions concerning this AGREEMENT, contact us at http://gisexpress.net/pages/contact/en
+
+All trademarks and registered trademarks are property of their respective owners.
+
+http://www.gisexpress.net
+Copyright © GISExpress 2015-2017. All Rights Reserved.

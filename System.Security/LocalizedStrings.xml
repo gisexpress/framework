@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<LocalizedStrings>
+  <xs:schema id="LocalizedStrings" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LocalizedStrings" msdata:IsDataSet="true" msdata:MainDataTable="Word" msdata:CaseSensitive="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Word" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="key" type="xs:string" />
+                <xs:element name="en-US" type="xs:string" minOccurs="0" />
+                <xs:element name="tr-TR" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="UniqueConstraint" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//Word" />
+        <xs:field xpath="key" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Word>
+    <key>9D7A7D77-9651-4700-A834-518AA4019C18</key>
+    <en-US>Enterprise</en-US>
+    <tr-TR>Enterprise</tr-TR>
+  </Word>
+  <Word>
+    <key>F81AE8EA-737F-4690-9A89-002637248A9F</key>
+    <en-US>Professional</en-US>
+    <tr-TR>Professional</tr-TR>
+  </Word>
+  <Word>
+    <key>D829D0D7-F08D-4D31-A0BF-283F73ABB615</key>
+    <en-US>Evaluation</en-US>
+    <tr-TR>Evaluation</tr-TR>
+  </Word>
+  <Word>
+    <key>73A954C1-2394-4F56-9AEE-8113D8E7E3FA</key>
+    <en-US>Unlicensed</en-US>
+    <tr-TR>Lisanssız</tr-TR>
+  </Word>
+  <Word>
+    <key>UnlicensedProduct</key>
+    <en-US>Unlicensed</en-US>
+    <tr-TR>Lisanssız</tr-TR>
+  </Word>
+  <Word>
+    <key>InvalidUsernamePassword</key>
+    <en-US>Invalid username or password</en-US>
+    <tr-TR>Geçersiz kullanıcı adı veya şifre</tr-TR>
+  </Word>
+  <Word>
+    <key>InvalidPassword</key>
+    <en-US>Invalid password</en-US>
+    <tr-TR>Geçersiz şifre</tr-TR>
+  </Word>
+  <Word>
+    <key>UsernameAlreadyTaken</key>
+    <en-US>The specified username has already been taken</en-US>
+    <tr-TR>Belirtilen kullanıcı adı daha önce alınmış</tr-TR>
+  </Word>
+  <Word>
+    <key>AllLicensesAreInUse</key>
+    <en-US>All licenses are in use</en-US>
+    <tr-TR>Tüm lisanslar kullanımda</tr-TR>
+  </Word>
+  <Word>
+    <key>NoSubscriptionFound</key>
+    <en-US>Checking...</en-US>
+    <tr-TR>Denetleniyor...</tr-TR>
+  </Word>
+  <Word>
+    <key>AlreadyHaveSubscription</key>
+    <en-US>You already have a subscription</en-US>
+    <tr-TR>Zaten bir aboneliğiniz var</tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseException</key>
+    <en-US>
+      You don't have a valid license to this operation.
+      Please, contact your system administrator or the representative of the product manufacturer for more information.
+    </en-US>
+    <tr-TR>
+      Bu işlem için geçerli bir lisansa sahip değilsiniz.
+      Daha fazla bilgi için, lütfen sistem yöneticiniz veya üretici firma temsilciniz ile irtibata geçiniz.
+    </tr-TR>
+  </Word>
+  <Word>
+    <key>LicenseException.Rtf</key>
+    <en-US>\b You don't have a valid license\b0 to this operation.\linePlease, contact your system administrator or the representative of the product manufacturer for more information.</en-US>
+    <tr-TR>Bu işlem için \b geçerli bir lisansa sahip değilsiniz\b0.\line Daha fazla bilgi için, lütfen sistem yöneticiniz veya üretici firma temsilciniz ile irtibata geçiniz.</tr-TR>
+  </Word>
+</LocalizedStrings>

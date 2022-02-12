@@ -1,0 +1,117 @@
+GISEXPRESS ® SON KULLANICI LÝSANS SÖZLEÞMESÝ
+BU SÖZLEÞME TÜM YAZILIM ÜRÜNLERÝNÝ KAPSAMAKTADIR 
+
+ÖNEMLÝ – LÜTFEN YAZILIM ÜRÜNLERÝNÝN KULLANIMI ve/veya DAÐITIMI ÖNCESÝNDE BU SON KULLANICI SÖZLEÞMESÝNÝ DÝKKATLÝCE OKUYUN.
+
+Bu GISEXPRESS SÖZLEÞMESÝ siz veya tüzel kiþi ve/veya temsil ettiðiniz kurum ile GISEXPRESS arasýnda ve temsil ettiði tüm GISEXPRESS ürünleri, bileþenleri, grafik bileþenleri ("widgets"), kaynak kodlarý, ara dosyalar, görsel ve/veya basýlý materyalleri ve dokümantasyonlarýný kapsayan yasal olarak baðlayýcý bir sözleþmeyi temsil eder.
+
+YAZILIM ÜRÜNLERÝNÝ satýn alarak, kurulum yaparak, kopyalayarak veya diðer tüm kullaným þekillerinde okumak zorunda olduðunuz bu SÖZLEÞMEYÝ ve baðladýðý hüküm ve koþullarý kabul etmiþ sayýlýrsýnýz. Eðer tüzel kiþi ve/veya bir kurumu temsil ediyorsanýz bu SÖZLEÞMENÝN hüküm ve koþullarýný temsil ettiðiniz tüzel kiþi ve/veya kurumu baðlayacak yasal yetkilere sahip olduðunuzu beyan ve kabul etmiþ sayýlýrsýnýz.
+
+Eðer bu SÖZLEÞMENÝN herhangi bir hüküm veya koþulunu kabul etmiyorsanýz ya da temsil ettiðiniz tüzel kiþi ve/veya kurum adýna bu SÖZLEÞMEDEKÝ hüküm ve koþullarý baðlayýcý yasal yetkilere sahip deðilseniz GISEXPRESS YAZILIM ÜRÜNÜ veya ÜRÜNLERÝNÝ, BU ÜRÜN VEYA ÜRÜNLERE AÝT HERHANGÝ BÝR KISMI, DOSYAYI VEYA BÝR BÖLÜMÜNÜ, KULLANMAYIN, DEÐERLENDÝRMEYÝN, KOPYALAMAYIN, HERHANGÝ BÝR ÞEKÝLDE ÇOÐALTMAYIN.
+
+TÜM YAZILIM ÜRÜNLERÝ LÝSANSLIDIR, SATILMAZ.
+
+1. YAZILIM KULLANIM LÝSANSI
+
+GISEXPRESS tarafýndan verilen yazýlým kurulum ve kullaným lisansý bu SÖZLEÞMENÝN tüm hüküm ve koþullarýna tabidir, geniþletilemez ve devredilemez.
+
+1.1 KÝÞÝSEL KULLANIM
+
+http://www.gisexpress.net/tr adresinden veya yetkili bir satýcý tarafýndan bu sözleþmenin 8. Maddesinde tanýmlanmýþ bir abonelik satýn alarak GISEXPRESS ürünlerini kurabilir ve kullanabilirsiniz.
+
+1.2 TÝCARÝ KULLANIM
+
+Bu sözleþmenin 8. Maddesi uyarýnca bir GISEXPRESS ticari kullaným lisansý satýn alarak GISEXPRESS masaüstü yazýlýmý alt yapýsýný kullanarak birlikte çalýþabileceði ve uygulamaya istediðiniz ek yetenekleri saðlayacak bir eklenti ve/veya tarafýnýzdan deðiþtirilmiþ bir sürümünü geliþtirebilirsiniz.
+
+YAZILIM ÜRÜNLERÝ veya tarafýnýzdan deðiþtirilmiþ sürümleri veya sonuç olarak çýkan ve/veya yeniden paketlediðiniz ürünü kullanan kullanýcý sayýsý satýn alýnmýþ lisanslý kullanýcý sayýsýna eþit veya daha az olmalýdýr.
+
+1.3 ÜCRETSÝZ KULLANIM
+
+Edindiðiniz GISEXPRESS yazýlým ürünü eðer "ÜCRETSÝZ" / "COMPLIMENTARY" veya "FREE" olarak iþaretli ise bu ürünü kurabilir ve kullanabilirsiniz. GISEXPRESS önceden haber vermeksizin herhangi bir anda ücretsiz kullanýmý kýsmen veya tamamen sonlandýrma hakkýný saklý tutar.
+
+1.4 DEÐERLENDÝRME SÜRÜMÜ
+
+Edindiðiniz GISEXPRESS yazýlým ürünü "DEÐERLENDÝRME" veya "EVALUATION" olarak iþaretli ise bu ürünün bir kopyasýný deðerlendirme amaçlý olarak GISEXPRESS tarafýndan tanýnan süre sonunda kaldýrýp, tüm kopyalarýný silmek koþuluyla kurabilir ve kullanabilirsiniz.
+
+2. TERSÝNE MÜHENDÝSLÝK / KAYNAK KODA DÖNÜÞTÜRME, AYRIÞTIRMA
+
+YAZILIM ÜRÜNLERÝ üzerinde tersine mühendislik / kaynak koda dönüþtürme ve benzer çalýþmalar yapamazsýnýz veya ayrýþtýramazsýnýz. Tersine mühendislik / kaynak koda dönüþtürme, benzer çalýþmalar ya da istismar, saðlanmýþ kaynak kod ve çözüm yöntemleri / algoritmalarý dâhil olmak üzere GISEXPRESS fikri mülkiyet ve ticari sýrlarýný izinsiz aktarma amaçlý satýn alýnan YAZILIM ÜRÜNLERÝ ve sonuç olarak elde edilen ÜRÜNLER yasadýþý olarak deðerlendirilecektir. Fikri mülkiyet veya türetilmiþ herhangi bir satýþ veya yeniden satýþý yürürlükteki tüm yerel ve uluslararasý yasalarýn izin verdiði azami ölçüde dava edilecektir. 
+
+3. BÝLEÞENLERÝN AYRIÞTIRILMASI
+
+YAZILIM ÜRÜNLERÝ tek bir ÜRÜN olarak lisanslýdýr. YAZILIM ÜRÜNLERÝ ve onlarý meydana getiren parçalarý ve saðlanmýþ yeniden daðýtýlabilir bölümlerinde tersine mühendislik / kaynak koda dönüþtürme ve benzer çalýþmalar yapamazsýnýz veya ayrýþtýramazsýnýz, birden fazla bilgisayarda kullanýlmak üzere ayrýþtýramazsýnýz, kopyalayamazsýnýz / daðýtamazsýnýz, satamazsýnýz, yeniden lisanslanarak satýþýný yapamazsýnýz. YAZILIM ÜRÜNLERÝ ile birlikte kaynak kodun saðlanmasý, fikri mülkiyet, kaynak kodun tamamý veya bir kýsmýnýn yeniden satýþý veya daðýtýmýnda herhangi bir yasal hak devri teþkil etmez ve aksi davranýþlar yürürlükteki tüm yerel ve uluslararasý yasalarýn izin verdiði azami ölçüde dava edilecektir. Tüm GISEXPRESS kütüphaneleri, kaynak kodu, yeniden daðýtýlabilir ve diðer tüm dosyalar GISEXPRESS özel mülkiyetleridir, daðýtamazsýnýz.
+
+4. KÝRALAMA
+
+YAZILIM ÜRÜNLERÝNÝ hiçbir koþulda kiralayamaz veya ödünç veremezsiniz.
+
+5. DEVÝR
+
+Süresiz veya geçici olarak bu sözleþme ile saðlanan HERHANGÝ bir hakkýnýzý GISEXPRESS tarafýndan yazýlmýþ bir onay olmadan herhangi bir kiþiye ya da kiþisel, ticari veya kamu kurumuna devredemezsiniz. YAZILIM ÜRÜNLERÝNÝN veya içerdikleri herhangi bir parçasýnýn üzerinde tarafýnýzdan yapýlmýþ her ne deðiþiklik olursa olsun YAZILIM ÜRÜNLERÝNÝN veya herhangi bir parçasýnýn kullaným hakký sadece lisans sahibine aittir. Hiçbir koþulda GISEXPRESS tarafýndan yazýlmýþ bir onay olmadan GISEXPRESS ürünlerini, kütüphanelerini veya herhangi bir dosyasýný paylaþamaz ve daðýtamazsýnýz. 
+
+6. YENÝDEN DAÐITMA
+
+GISEXPRESS tarafýndan yazýlmýþ bir onay olmadan YAZILIM ÜRÜNLERÝNÝ veya deðiþtirilmiþ sürümlerini veya bu ürünlere ait herhangi bir parçasýný HÝÇBÝR þekilde paylaþamaz ve daðýtamazsýnýz.
+
+7. TELÝF HAKKI
+
+GISEXPRESS YAZILIM ÜRÜNLERÝNÝN ve içerdiði görseller öðeler, örnekler, kaynak kodlar, dosyalar, paketler, fotoðraflar, animasyonlar, ses ve yazýlar, YAZILIM ÜRÜNLERÝNÝN beraberindeki küçük uygulamalar ve tüm kopyalarý dâhil olmak üzere tüm ünvan ve telif haklarý ticari marka sýnýrlamasý olmaksýzýn GISEXPRESS’e aittir.
+
+YAZILIM ÜRÜNLERÝ telif hakký yasalarý ve uluslararasý anlaþma hükümleri tarafýndan korunmaktadýr, bu nedenle diðer tüm telif hakký ile korunan materyaller gibi muamele etmelisiniz ve bu ANLAÞMADA açýklan þekilde kurmalý ve kullanmalýsýnýz.
+
+8. ABONELÝK VE GÜNCELLEMELER
+
+GISEXPRESS abonelik ile YAZILIM ÜRÜN veya ÜRÜNLERÝ lisanslar.
+
+Bir abonelik satýn alýnma tarihinden itibaren 12 ay sürer. Satýn alýnan abonelik döneminde YAZILIM ÜRÜNLERÝNÝN tüm majör ve minör güncellemeleri alabilirsiniz.
+
+Aboneliðinizi isteðe baðlý olarak GISEXPRESS ÜRÜNLERÝNÝN majör ve/veya minör güncellemelerini almaya devam etmek için abonelik döneminden sonra yenileyebilirsiniz.
+
+http://gisexpress.net/tr adresinde listelenen abonelik ve sonrasýndaki yenilenme ücretleri haber verilerek veya haber vermeksizin deðiþtirilebilir.
+
+GISEXPRESS herhangi bir zamanda YAZILIM ÜRÜNLERÝ ve bileþenlerine devam etmeme hakkýný saklý tutar.
+
+9. YAZILIM ÜRÜNLERÝNÝN ÝNDÝRÝLMESÝ
+
+GISEXPRESS YAZILIM ÜRÜNLERÝ sadece http://gisexpress.net adresinde indirmeye hazýr olacaktýr.
+
+10. ÝHRACAT KISITLARI
+
+GISEXPRESS Türkiye Cumhuriyeti’nin uygulamada olan tüm ihracat kýsýtlamalarý ile tamamen uyumludur.
+
+11. GARANTÝ REDDÝ
+
+GISEXPRESS kesinlikle YAZILIM ÜRÜNLERÝ için herhangi bir garanti vermez. GISEXPRESS YAZILIM ÜRÜNLERÝNÝN kullanýmýna iliþkin doðruluk, güvenilirlik, eksiksizlik açýsýndan hiçbir beyan, güvence veya garanti vermez. YAZILIM ÜRÜNLERÝNÝN KULLANIMI VEYA BAÞARISI VE PERFORMANSINDAN KAYNAKLANAN RÜM RÝSKLER SÝZE AÝTTÝR. 
+
+12. SORUMLULUK KISITLARI
+
+Yürürlükteki yasalarýn izin verdiði azami ölçüde, herhangi bir sýnýrlama olmaksýzýn GISEXPRESS YAZILIM ÜRÜNLERÝNÝN kullanýmý veya yetersizliðinden kaynaklanan (ticari kar kaybý, iþ durmasý, iþ bilgilerinin kaybý ya da herhangi bir maddi kayýplar dâhil) oluþabilecek zararlardan, bu tür zararlarýn olasýlýðý önceden bildirilmiþ dahi olsa hiçbir koþulda GISEXPRESS sorumlu olmayacaktýr.
+
+YAZILIM ÜRÜNLERÝ kusur ve hata riski taþýmaktadýr, YAZILIM ÜRÜNLERÝ içerisinde olabilecek kusurlar / hatalar sonucunda yanlýþ sonuçlar üretilebilir ve lisans sahibi herhangi bir kullaným için tam ve yegâne sorumluluðu kayýtsýz olarak üstlenir.
+
+Oluþabilecek hatalar ve kusurlarýn ve/veya diðer tüm iddialarýn telafisi kayýtsýz olarak size aittir, GISEXPRESS’in tek yükümlülüðü bu anlaþmaya tabi olacaktýr ve hiçbir koþulda GISEXPRESS sorumluluðu ürün için ödenen bedeli aþamaz.
+
+Eðer YAZILIM ÜRÜNLERÝNDEKÝ kusur kazara, istismar, deðiþiklik, yetkisiz veya yanlýþ kullanýmdan kaynaklanýyorsa bu Sýnýrlý Garanti geçersizdir.
+
+13. SONLANDIRMA
+
+Herhangi bir þekilde bu sözleþmenin sona ermesi halinde tüm GISEXPRESS fikri mülkiyet kullanýmlarýný, YAZILIM ÜRÜNLERÝNÝ ve/veya deðiþtirilmiþ hallerini, bunlara ait diðer tüm bileþenleri, kaynak kodlarý ve kopyalarýný imha etmeniz gerekir.
+
+14. KÝÞÝSEL VERÝ
+
+GISEXPRESS YAZILIM ÜRÜNLERÝNÝN içerisinde kullaným ve kusurlarý tespit etmeye yardýmcý olmak, kullanýmýn bu sözleþmenin koþullarýna uygun olduðunu doðrulamak amacýna uygun bilgi toplayabilir. GISEXPRESS elde ettiði bilgileri paylaþmaz, kiralamaz veya satmaz. GISEXPRESS satýn alma bilgilerini veya lisans bilgilerini üçüncü þahýslarla paylaþmaz.
+
+15. DÝÐER
+
+Bu anlaþma Türkiye Cumhuriyeti yasalarýna tabi olacaktýr, bu anlaþmanýn size verdiði haklar ülkeden ülkeye farklýlýk gösterebilir.
+
+Bu anlaþmanýn herhangi bir hükmünün geçersiz veya uygulanamaz bulunmasý durumunda anlaþmanýn deðiþtirilmesi yalnýzca siz ve GISEXPRESS tarafýndan imzalanarak saðlanabilir, kalan tüm hükümler kendi þartlarýna göre uygulanabilir olacaktýr.
+
+GISEXPRESS BU ANLAÞMA ÝLE BELÝRTÝLMEMÝÞ TÜM HAKLARINI SAKLI TUTAR.
+
+Bu sözleþme ile ilgili bir sorunuz varsa, http://gisexpress.net/pages/contact/tr adresinden bizimle temasa geçebilirsiniz.
+
+Tüm ticari markalar ve tescilli ticari markalar kendi sahiplerinin mülkiyetindedir.
+
+http://www.gisexpress.net
+Telif Hakký 2015-2017 GISExpress. Tüm haklarý saklýdýr.
