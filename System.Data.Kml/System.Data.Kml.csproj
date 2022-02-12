@@ -72,7 +72,7 @@
       <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
       <Name>System.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Windows.Modules\System.Windows.Modules.csproj">
+    <ProjectReference Include="..\..\desktop\System.Windows.Modules\System.Windows.Modules.csproj">
       <Project>{73F40B12-7E14-460E-9384-80ABD2C0E164}</Project>
       <Name>System.Windows.Modules</Name>
     </ProjectReference>

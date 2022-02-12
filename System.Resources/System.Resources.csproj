@@ -72,11 +72,6 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Files.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Files.resx</DependentUpon>
-    </Compile>
     <Compile Include="Images016.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,10 +95,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Files.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Files.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Images048.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Images048.Designer.cs</LastGenOutput>
@@ -130,11 +121,6 @@
     <Content Include="Images016\File.png" />
     <Content Include="Images016\LangEn.png" />
     <Content Include="Images016\LangTr.png" />
-    <None Include="Files\Customers.csv" />
-    <None Include="Files\Employees.csv" />
-    <None Include="Files\OrderDetails.csv" />
-    <None Include="Files\Orders.csv" />
-    <None Include="Files\Shippers.csv" />
     <None Include="GISExpress.snk" />
     <None Include="Images032\Desktop.png" />
     <None Include="Images032\DriveFixed.png" />
@@ -281,7 +267,6 @@
       <LastGenOutput>ImagesCustom.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="Files\Products.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

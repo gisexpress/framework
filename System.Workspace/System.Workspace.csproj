@@ -121,11 +121,11 @@
       <Project>{dd70cc97-ca8f-407f-b60d-2f01ece7942e}</Project>
       <Name>System.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Windows.Forms.Base\System.Windows.Forms.Base.csproj">
+    <ProjectReference Include="..\..\desktop\System.Windows.Forms.Base\System.Windows.Forms.Base.csproj">
       <Project>{a48ff71b-cfbd-47e9-86b0-58a6d73bc333}</Project>
       <Name>System.Windows.Forms.Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\System.Windows.Forms.ColorEdit\System.Windows.Forms.ColorEdit.csproj">
+    <ProjectReference Include="..\..\desktop\System.Windows.Forms.ColorEdit\System.Windows.Forms.ColorEdit.csproj">
       <Project>{d773b0fc-9749-4971-bd1b-eee439d884e5}</Project>
       <Name>System.Windows.Forms.ColorEdit</Name>
     </ProjectReference>
