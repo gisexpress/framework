@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD70CC97-CA8F-407F-B60D-2F01ECE7942E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Runtime</RootNamespace>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GISExpress.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessors\IMemberAccessor.cs" />
+    <Compile Include="Accessors\MemberAccessor.cs" />
+    <Compile Include="Accessors\MemberAccessorCollection.cs" />
+    <Compile Include="ComponentModel\ISupportCriteria.cs" />
+    <Compile Include="Data\Database.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataHashRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataRecordT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataSourceCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\IDataRecordSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\IDataSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\IDataTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\IDataTableCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\IRowEnumerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\RelationalDataRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\RuntimeReader.cs" />
+    <Compile Include="Functions\DateTimeFunction.cs" />
+    <Compile Include="Functions\DateTimeFunctions.cs" />
+    <Compile Include="Functions\MathFunctions.cs" />
+    <Compile Include="MethodCache.cs" />
+    <Compile Include="Operators\ExpressionOperatorPropertyDescriptor.cs" />
+    <Compile Include="Sql\AggregateFunctions.cs" />
+    <Compile Include="Sql\AggregateFunction.cs" />
+    <Compile Include="Sql\AsteriskOperand.cs" />
+    <Compile Include="Sql\AlterOperator.cs" />
+    <Compile Include="Sql\DeclareOperator.cs" />
+    <Compile Include="Sql\DeleteOperator.cs" />
+    <Compile Include="Sql\ExecutionResult.cs" />
+    <Compile Include="Sql\FromOperator.cs" />
+    <Compile Include="Data\IRelationalDataRecord.cs" />
+    <Compile Include="Sql\JoinOperator.cs" />
+    <Compile Include="Sql\OperandMember.cs" />
+    <Compile Include="Sql\SelectOperator.JoinPair.cs" />
+    <Compile Include="Sql\UpdateOperator.cs" />
+    <Compile Include="Sql\InsertOperator.cs" />
+    <Compile Include="Sql\IsOperator.cs" />
+    <Compile Include="Sql\FromExpressionOperator.cs" />
+    <Compile Include="Sql\SelectExpressionOperator.cs" />
+    <Compile Include="Sql\SelectExpressionOperatorCollection.cs" />
+    <Compile Include="Sql\WhereOperator.cs" />
+    <Compile Include="Sql\GroupOperator.cs" />
+    <Compile Include="Sql\OrderOperator.cs" />
+    <Compile Include="Sql\OrderOperand.cs" />
+    <Compile Include="Sql\SelectOperator.TableCollection.cs" />
+    <Compile Include="Sql\SelectOperator.Table.cs" />
+    <Compile Include="Sql\SelectOperator.DataRecordSet.cs" />
+    <Compile Include="Sql\SelectOperator.cs" />
+    <Compile Include="Operands\OperandProperty.cs" />
+    <Compile Include="Functions\MathFunction.cs" />
+    <Compile Include="Evaluator.cs" />
+    <Compile Include="Exceptions\ExpressionParserException.cs" />
+    <Compile Include="Exceptions\InvalidOperatorException.cs" />
+    <Compile Include="Functions\BeetweenOperator.cs" />
+    <Compile Include="Functions\ExpressionFunction.cs" />
+    <Compile Include="Functions\InOperator.cs" />
+    <Compile Include="IO\Globals.cs" />
+    <Compile Include="IO\IlInstruction.cs" />
+    <Compile Include="IO\MethodBodyReader.cs" />
+    <Compile Include="OperandFactory.cs" />
+    <Compile Include="Operands\ValueOperand.cs" />
+    <Compile Include="Binary\BinaryOperator.cs" />
+    <Compile Include="Binary\BinaryOperatorTypeComparer.cs" />
+    <Compile Include="Operators\ExpressionInstructionEventArgs.cs" />
+    <Compile Include="Operators\ExpressionOperator.cs" />
+    <Compile Include="Operators\ExpressionOperatorCollection.cs" />
+    <Compile Include="Unary\UnaryOperator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parser\DateTimeToken.cs" />
+    <Compile Include="Parser\ExpressionParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocalizedStrings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Base\System.Base.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Extensions\System.Core.csproj">
+      <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GISExpress.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
