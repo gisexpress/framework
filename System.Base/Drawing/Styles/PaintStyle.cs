@@ -34,11 +34,6 @@ namespace System.Drawing
     {
         static PaintStyle()
         {
-            //Default = new PaintStyle();
-            //Default.LineStyle.Width = 1;
-            //Default.PolyStyle.Fill = true;
-            //Default.PolyStyle.Color = Color.FromArgb(200, ApplicationAppereance.Colors.Control);
-
             Highlight = new PaintStyle(XmlDocumentBase.Empty);
             Highlight.LineStyle.Width = 2;
             Highlight.LineStyle.Color = Color.FromArgb(200, ApplicationAppereance.Colors.Highlight);
@@ -48,7 +43,6 @@ namespace System.Drawing
         {
         }
 
-        //public static readonly PaintStyle Default;
         public static readonly PaintStyle Highlight;
 
         public string Id
@@ -61,12 +55,6 @@ namespace System.Drawing
         {
             get { return Id; }
         }
-
-        //public bool IsDefault
-        //{
-        //    get;
-        //    internal set;
-        //}
 
         //public StyleRule Rule
         //{

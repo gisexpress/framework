@@ -34,7 +34,7 @@ namespace System.Runtime
     {
         public GroupOperator()
         {
-            Operands = OperandFactory.CreateOperatorCollection(this);
+            Operands = OperandFactory.Default.CreateOperatorCollection(this);
         }
 
         public override bool IsEmpty()
@@ -75,7 +75,7 @@ namespace System.Runtime
 
                     if (e.Current.Equals(Constants.Sql.KeywordHaving) && e.MoveNext())
                     {
-                        group.HavingOperands = OperandFactory.CreateOperatorCollection(this);
+                        group.HavingOperands = OperandFactory.Default.CreateOperatorCollection(this);
 
                         while ((o = Read(e, group.HavingOperands)).HasValue())
                         {

@@ -95,7 +95,7 @@ namespace System.IO.Runtime
             if (e.MoveNext())
             {
                 var o = default(IExpressionOperator);
-                var operands = OperandFactory.CreateOperatorCollection();
+                var operands = OperandFactory.Default.CreateOperatorCollection();
 
                 while (e.CanRead)
                 {

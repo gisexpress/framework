@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataCommand.cs" />
-    <Compile Include="IFeatureRecord.cs" />
     <Compile Include="DataFeature.cs" />
     <Compile Include="IFeature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

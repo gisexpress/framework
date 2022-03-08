@@ -25,59 +25,63 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-using System.Reflection;
-
 namespace System.Runtime
 {
-    [Obfuscation(Exclude = true)]
-    public static class OperandFactory
+    public class OperandFactory : IOperandFactory
     {
-        public static IExpressionOperator Parse(string expression, object component)
+        static OperandFactory()
+        {
+            Default = new OperandFactory();
+        }
+
+        public readonly static OperandFactory Default;
+
+        public IExpressionOperator Parse(string expression, object component)
         {
             return ExpressionOperator.Parse(expression, component);
         }
 
-        public static IExpressionOperatorCollection CreateOperatorCollection()
+        public IExpressionOperatorCollection CreateOperatorCollection()
         {
             return new ExpressionOperatorCollection { AllowMultiple = false };
         }
 
-        public static IExpressionOperatorCollection CreateOperatorCollection(IExpressionOperator operand)
+        public IExpressionOperatorCollection CreateOperatorCollection(IExpressionOperator operand)
         {
             return new ExpressionOperatorCollection(operand);
         }
 
-        public static IExpressionOperatorCollection CreateOperatorCollection(IExpressionOperator operand, params object[] args)
+        public IExpressionOperatorCollection CreateOperatorCollection(IExpressionOperator operand, params object[] args)
         {
             return new ExpressionOperatorCollection(operand, args);
         }
 
-        public static IValueOperand CreateValueOperand(object value)
+        public IValueOperand CreateValueOperand(object value)
         {
             return new ValueOperand(value);
         }
 
-        public static IOperandProperty CreateOperandProperty(string propertyName)
+        public IOperandProperty CreateOperandProperty(string propertyName)
         {
             return new OperandProperty(propertyName);
         }
 
-        public static IInOperator CreateInOperator(IExpressionOperator leftOperand, object[] literals)
+        public IInOperator CreateInOperator(IExpressionOperator leftOperand, object[] literals)
         {
             return new InOperator(leftOperand, literals);
         }
 
-        public static IExpressionOperator Combine(BinaryOperatorType operatorType, IExpressionOperator leftOperand, IExpressionOperator rightOperand)
+        public IExpressionOperator Combine(BinaryOperatorType operatorType, IExpressionOperator leftOperand, IExpressionOperator rightOperand)
         {
             return BinaryOperator.Combine(operatorType, leftOperand, rightOperand);
         }
 
-        public static IBinaryOperator CreateBinaryOperator(BinaryOperatorType operatorType, IExpressionOperator leftOperand, object literal)
+        public IBinaryOperator CreateBinaryOperator(BinaryOperatorType operatorType, IExpressionOperator leftOperand, object literal)
         {
             return new BinaryOperator(operatorType, leftOperand, literal);
         }
 
-        public static IBinaryOperator CreateBinaryOperator(BinaryOperatorType operatorType, IExpressionOperator leftOperand, IExpressionOperator rightOperand)
+        public IBinaryOperator CreateBinaryOperator(BinaryOperatorType operatorType, IExpressionOperator leftOperand, IExpressionOperator rightOperand)
         {
             return new BinaryOperator(operatorType, leftOperand, rightOperand);
         }

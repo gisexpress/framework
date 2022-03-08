@@ -82,7 +82,7 @@ namespace System.Workspace
         public new int Srid
         {
             get { return CoordinateSystem == null ? 0 : (int)CoordinateSystem.Authority; }
-            set { CoordinateSystem = CoordinateSystemFactory.Create(value); }
+            set { Crs = CoordinateSystemFactory.Create(value); }
         }
 
         public IGeometryFactory Factory
@@ -92,8 +92,7 @@ namespace System.Workspace
 
         public new ICoordinateSystem CoordinateSystem
         {
-            get;
-            protected set;
+            get { return OnFindCoordinateSystem(); }
         }
 
         public bool SelectionIsEmpty
@@ -194,13 +193,13 @@ namespace System.Workspace
             }
         }
 
-        public override IEnvelope GetBounds(ICoordinateSystem target)
+        public override IEnvelope GetBounds()
         {
             IEnvelope e = Factory.Create<IEnvelope>();
 
             foreach (MapLayer layer in GetLayers())
             {
-                e = e.Union(layer.GetBounds(target ?? CoordinateSystem));
+                e = e.Union(layer.GetBounds());
             }
 
             return e;

@@ -36,7 +36,7 @@ namespace System.Geometries.Filtering
         public SpatialOperator(IEnvelope bounds)
         {
             OperatorType = SpatialOperatorType.Intersects;
-            Geometry = OperandFactory.CreateValueOperand(bounds);
+            Geometry = OperandFactory.Default.CreateValueOperand(bounds);
         }
 
         public override bool IsEmpty()
@@ -65,17 +65,17 @@ namespace System.Geometries.Filtering
                 }
 
                 OperatorTypeValue = value;
-                Operand = default(IOperandProperty);
+                Operand = default;
             }
         }
 
         public IOperandProperty Property
         {
-            get { return PropertyValue ?? OperandFactory.CreateOperandProperty(Constants.Data.Shape); }
+            get { return PropertyValue ?? OperandFactory.Default.CreateOperandProperty(Constants.Data.Shape); }
             set
             {
                 PropertyValue = value;
-                Operand = default(IOperandProperty);
+                Operand = default;
             }
         }
 
@@ -85,7 +85,7 @@ namespace System.Geometries.Filtering
             set
             {
                 GeometryValue = value;
-                Operand = default(IOperandProperty);
+                Operand = default;
             }
         }
 

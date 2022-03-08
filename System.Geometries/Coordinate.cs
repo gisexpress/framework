@@ -689,7 +689,7 @@ namespace System.Geometries
         {
             if (IsEmpty())
             {
-                return default(object);
+                return default;
             }
 
             switch (property)
@@ -704,7 +704,7 @@ namespace System.Geometries
                     return Z;
             }
 
-            return default(object);
+            return default;
         }
 
         public void SetValue(GeometryProperty property, object value)
@@ -766,21 +766,19 @@ namespace System.Geometries
 
         public ICoordinate Clone()
         {
-            return Clone(default(ICoordinateCollection));
+            return Clone(default);
         }
 
         public ICoordinate Clone(ICoordinateCollection owner)
         {
-            var c = MemberwiseClone() as Coordinate;
-
-            c.Collection = owner;
+            var c = new Coordinate { Collection = owner };
 
             if (IsEmpty())
             {
                 return c;
             }
 
-            c.Items = Items.Clone() as double[];
+            c.SetValues(Items.Clone() as double[]);
 
             return c;
         }
@@ -805,7 +803,7 @@ namespace System.Geometries
         {
             if (IsEmpty())
             {
-                return default(string);
+                return default;
             }
 
             return ToString(" ");

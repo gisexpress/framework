@@ -502,14 +502,18 @@ namespace System.Geometries
         public void Transform(IMathTransform transform)
         {
             bool closed = IsClosed;
-            IsClosed = false;
 
-            foreach (Coordinate c in Items)
+            if (closed)
             {
-                c.Transform(transform);
+                IsClosed = false;
             }
 
-            IsClosed = closed;
+            Items.ForEach(c => transform.Transform(c));
+
+            if (closed)
+            {
+                IsClosed = true;
+            }
         }
 
         public ILineString ToLineString()
@@ -522,6 +526,11 @@ namespace System.Geometries
         public ICoordinate[] ToArray()
         {
             return Items.ToArray();
+        }
+
+        public ICoordinate[] ToCopyArray()
+        {
+            return Items.Select(c => c.Clone()).ToArray();
         }
 
         public virtual object[] GetObjects()
@@ -641,14 +650,7 @@ namespace System.Geometries
 
         public new ICoordinateCollection Clone()
         {
-            var c = (CoordinateCollection)MemberwiseClone();
-
-            for (int i = 0; i < Items.Count; i++)
-            {
-                Items[i] = Items[i].Clone();
-            }
-
-            return c;
+            return new CoordinateCollection(OwnerDocument) { ToCopyArray() };
         }
 
         public virtual string ToText()

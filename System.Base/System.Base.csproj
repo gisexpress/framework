@@ -121,7 +121,9 @@
     <Compile Include="ComponentModel\IDispatcher.cs" />
     <Compile Include="ComponentModel\IEditableDataObject.cs" />
     <Compile Include="ComponentModel\IEvaluationValue.cs" />
+    <Compile Include="ComponentModel\IFeatureRecord.cs" />
     <Compile Include="ComponentModel\IImagedList.cs" />
+    <Compile Include="ComponentModel\IMapLayer.cs" />
     <Compile Include="ComponentModel\IPropertyEditor.cs" />
     <Compile Include="ComponentModel\ISupportDescription.cs" />
     <Compile Include="ComponentModel\ISupportDispatcher.cs" />
@@ -326,6 +328,7 @@
     <Compile Include="Runtime\IIsOperator.cs" />
     <Compile Include="Runtime\IJoinOperator.cs" />
     <Compile Include="Runtime\ILegacyToStringVisitor.cs" />
+    <Compile Include="Runtime\IOperandFactory.cs" />
     <Compile Include="Runtime\IOperandMember.cs" />
     <Compile Include="Runtime\IOperandProperty.cs" />
     <Compile Include="Runtime\IOrderOperand.cs" />

@@ -93,7 +93,7 @@ namespace System.Runtime
 
         public override bool TryParse(ITokenEnumerator e, IExpressionOperator leftOperand, out IExpressionFunction result)
         {
-            var operands = OperandFactory.CreateOperatorCollection(this);
+            var operands = OperandFactory.Default.CreateOperatorCollection(this);
 
             result = default(IExpressionFunction);
 

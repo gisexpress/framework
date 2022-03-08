@@ -55,7 +55,7 @@ namespace System.Runtime
 
             foreach (object value in literals)
             {
-                Add(value as IExpressionOperator ?? OperandFactory.CreateValueOperand(value));
+                Add(value as IExpressionOperator ?? OperandFactory.Default.CreateValueOperand(value));
             }
         }
 
@@ -97,7 +97,7 @@ namespace System.Runtime
         {
             if (e.Current.Equals('('))
             {
-                return OperandFactory.CreateOperatorCollection().Read(e, out o);
+                return OperandFactory.Default.CreateOperatorCollection().Read(e, out o);
             }
 
             o = default(IExpressionOperator);

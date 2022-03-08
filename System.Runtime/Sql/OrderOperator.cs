@@ -67,7 +67,7 @@ namespace System.Runtime
 
             if (selectOperand.HasValue() && e.Current.Equals(Constants.Sql.KeywordBy) && e.MoveNext())
             {
-                var operands = OperandFactory.CreateOperatorCollection(this);
+                var operands = OperandFactory.Default.CreateOperatorCollection(this);
                 var orderOperator = new OrderOperator { Operands = new List<IOrderOperand>() };
 
                 while (e.CanRead)

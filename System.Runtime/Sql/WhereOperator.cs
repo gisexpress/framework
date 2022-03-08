@@ -60,7 +60,7 @@ namespace System.Runtime
 
             if (selectOperand.HasValue())
             {
-                var operands = OperandFactory.CreateOperatorCollection(this);
+                var operands = OperandFactory.Default.CreateOperatorCollection(this);
 
                 while (e.CanRead)
                 {

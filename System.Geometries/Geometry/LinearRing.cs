@@ -39,10 +39,6 @@ namespace System.Geometries
     {
         public const int MinimumValidSize = 4;
 
-        //public LinearRing() : base()
-        //{
-        //}
-
         public LinearRing(XmlDocument document) : base(Constants.Xml.LinearRing, document)
         {
         }
@@ -50,21 +46,6 @@ namespace System.Geometries
         public LinearRing(string localName, XmlDocument document) : base(localName, document)
         {
         }
-
-        //public LinearRing(ICoordinate[] coordinates)
-        //    : base(coordinates)
-        //{
-        //}
-
-        //public LinearRing(BinaryReader reader)
-        //    : base(reader, reader.ReadInt32())
-        //{
-        //}
-
-        //public LinearRing(BinaryReader reader, int numPoints)
-        //    : base(reader, numPoints)
-        //{
-        //}
 
         public override bool IsRing()
         {

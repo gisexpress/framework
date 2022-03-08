@@ -60,6 +60,10 @@
       <Project>{657109ef-7a80-4cf3-af6c-fe192f99a7f6}</Project>
       <Name>System.Base</Name>
     </ProjectReference>
+    <ProjectReference Include="..\System.CoordinateSystems\System.CoordinateSystems.csproj">
+      <Project>{b9baa5a6-9c7c-414a-b1c6-733b77417a9d}</Project>
+      <Name>System.CoordinateSystems</Name>
+    </ProjectReference>
     <ProjectReference Include="..\System.Data.Base\System.Data.Base.csproj">
       <Project>{50996028-3dd9-421b-82b7-17596f676f32}</Project>
       <Name>System.Data.Base</Name>

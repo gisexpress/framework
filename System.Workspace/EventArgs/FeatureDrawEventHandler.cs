@@ -26,7 +26,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Geometries;
 using System.Workspace.Drawing;
@@ -95,7 +94,7 @@ namespace System.Workspace
 
         public IGeometry Geometry
         {
-            get { return GeometryValue ?? (GeometryValue = Feature.GetGeometry()); }
+            get { return GeometryValue ?? (GeometryValue = Feature.GetGeometry().Transform(Layer.Transform)); }
             set { GeometryValue = value; }
         }
 

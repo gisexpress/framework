@@ -89,12 +89,7 @@ namespace System.Data
             return 0;
         }
 
-        public IEnvelope GetBounds()
-        {
-            return GetBounds(default);
-        }
-
-        public virtual IEnvelope GetBounds(ICoordinateSystem target)
+        public virtual IEnvelope GetBounds()
         {
             return default;
         }

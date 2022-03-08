@@ -25,8 +25,10 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime;
 using System.Xml;
 
 namespace System.Drawing
@@ -34,9 +36,16 @@ namespace System.Drawing
     [DebuggerDisplay("Count : {Count}")]
     public class PaintStyleCollection : XmlElementCollectionBase<PaintStyle>
     {
+        static PaintStyleCollection()
+        {
+            OperandFactory = TypeFactory.Default.Create<IOperandFactory>();
+        }
+
         public PaintStyleCollection(XmlDocument document) : base(document, Constants.Xml.Style)
         {
         }
+
+        static readonly IOperandFactory OperandFactory;
 
         public PaintStyle AddNewStyle(string name, bool color = true)
         {
@@ -82,6 +91,18 @@ namespace System.Drawing
 
                 return item ?? GetItems().FirstOrDefault();
             }
+        }
+
+        public PaintStyle Match(IFeatureRecord feature)
+        {
+            PaintStyle value = this[feature[Constants.Xml.StyleUrl] as string];
+
+            if (value == null)
+            {
+                return this[feature.Layer.Name, true];
+            }
+
+            return value;
         }
     }
 }

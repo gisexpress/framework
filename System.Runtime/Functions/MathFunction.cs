@@ -42,7 +42,7 @@ namespace System.Runtime
         public MathFunction(string name)
         {
             FunctionName = name;
-            Parameters = OperandFactory.CreateOperatorCollection(this);
+            Parameters = OperandFactory.Default.CreateOperatorCollection(this);
         }
 
         protected string FunctionName;

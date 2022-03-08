@@ -41,7 +41,7 @@ using System.Xml;
 namespace System.Workspace
 {
     [DebuggerDisplay("{Name}")]
-    public abstract class MapLayer : DataCommand, IKeyedObject, ISupportInitialize, ISupportTransactionLog, ISupportComponentActions, IDisposable
+    public abstract class MapLayer : DataCommand, IMapLayer, ISupportInitialize, ISupportTransactionLog, ISupportComponentActions, IDisposable
     {
         protected internal MapLayer(string prefix, string localName, string namespaceURI, XmlDocument doc) : base(prefix, localName, namespaceURI, doc)
         {
@@ -57,6 +57,9 @@ namespace System.Workspace
         protected PaintStyleCollection StyleItems;
 
         internal IPropertyDescriptor Property;
+        protected ICoordinateSystem Crs;
+        protected IMathTransform CrsTransform;
+        protected IMathTransform CrsInverseTransform;
 
         public object Component
         {
@@ -157,6 +160,25 @@ namespace System.Workspace
             protected set;
         }
 
+        public IMathTransform Transform
+        {
+            get { return CrsTransform ?? (CrsTransform = CoordinateSystem.CreateTransform(Workspace.CoordinateSystem)); }
+        }
+
+        public IMathTransform InverseTransform
+        {
+            get
+            {
+                if (CrsInverseTransform == null)
+                {
+                    CrsInverseTransform = (IMathTransform)Transform.Clone();
+                    CrsInverseTransform.Invert();
+                }
+
+                return CrsInverseTransform;
+            }
+        }
+
         public ICoordinateSystem CoordinateSystem
         {
             get { return OnFindCoordinateSystem(); }
@@ -248,8 +270,9 @@ namespace System.Workspace
             if (FeatureSupport)
             {
                 int n = 0;
+                IEnvelope e = bounds.Transform(InverseTransform);
 
-                foreach (IFeatureRecord feature in GetFeatures(bounds))
+                foreach (IFeatureRecord feature in GetFeatures(e))
                 {
                     if (Workspace.CancellationPending)
                     {
@@ -298,14 +321,12 @@ namespace System.Workspace
 
             if (StyleSupport)
             {
-                DrawEventArgs.Style = style ?? Workspace.Styles[feature[Constants.Xml.StyleUrl]] ?? Workspace.Styles[Name, true];
+                DrawEventArgs.Style = style ?? Workspace.Styles.Match(feature);
             }
             else
             {
                 DrawEventArgs.Style = default;
             }
-
-            Workspace.OnRenderFeature(DrawEventArgs);
 
             if (DrawEventArgs.Cancel)
             {
@@ -521,7 +542,7 @@ namespace System.Workspace
             yield return new ComponentAction { Name = "AddNewLayer", Image = Images016.NewItem, Perform = PerformAddNewLayer, Shortcut = Shortcut.CtrlN, BeginGroup = true };
             yield return new ComponentAction { Name = "AddNewExistingLayer", Image = Images016.ExistingItem, Perform = PerformAddNewItem };
             yield return new ComponentAction { Name = "Remove", Image = Images016.Delete, Perform = PerformRemove, CanPerform = CanPerformRemove, Shortcut = Shortcut.Del, BeginGroup = true };
-            yield return new ComponentAction { Name = "ReName", Image = Images016.Rename, Perform = PerformRename, CanPerform = CanPerformRename, Shortcut = Shortcut.F2};
+            yield return new ComponentAction { Name = "ReName", Image = Images016.Rename, Perform = PerformRename, CanPerform = CanPerformRename, Shortcut = Shortcut.F2 };
 
             //Actions.Add("AddNewCategory", Images016.NewFolder, PerformAddNewCategory);
             //Actions.Add("AddNewShpLayer", default(Image), PerformAddNewShpItem);

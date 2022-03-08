@@ -53,7 +53,7 @@ namespace System.Runtime
         public ValueOperand(Type declaringType, string memberName, params IExpressionOperator[] parameters)
         {
             DeclaringType = declaringType;
-            AddWithArguments(memberName, OperandFactory.CreateOperatorCollection(this, parameters));
+            AddWithArguments(memberName, OperandFactory.Default.CreateOperatorCollection(this, parameters));
         }
 
         public ValueOperand(Type declaringType, string memberName, IExpressionOperatorCollection parameters)
@@ -199,7 +199,7 @@ namespace System.Runtime
 
         public void AddWithArgument(string name, IExpressionOperator arg)
         {
-            AddWithArguments(name, OperandFactory.CreateOperatorCollection(arg));
+            AddWithArguments(name, OperandFactory.Default.CreateOperatorCollection(arg));
         }
 
         public void AddWithArguments(string name, IExpressionOperatorCollection args)

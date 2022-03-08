@@ -96,7 +96,6 @@ namespace System.Geometries
             set
             {
                 var e = value as XmlElementBase;
-
                 e.Remove();
                 AppendChild(e);
             }
@@ -342,17 +341,17 @@ namespace System.Geometries
 
         protected virtual IGeometry OnTransform(IMathTransform transform)
         {
-            if (transform.HasValue())
+            if (transform == null)
             {
-                IGeometry g = Clone();
-
-                g.Srid = transform.GetSrid();
-                g.Coordinates.Transform(transform);
-
-                return g;
+                return this;
             }
 
-            return this;
+            IGeometry g = Clone();
+
+            g.Srid = transform.GetSrid();
+            g.Coordinates.Transform(transform);
+
+            return g;
         }
 
         public IGeometry Union(IGeometry other)

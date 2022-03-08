@@ -35,7 +35,7 @@ namespace System.Runtime
     {
         public static object Eval(string expression)
         {
-            return Eval(expression, default(object));
+            return Eval(expression, default);
         }
 
         public static object Eval(string expression, object component)
@@ -52,7 +52,7 @@ namespace System.Runtime
                 return o.Evaluate();
             }
 
-            return default(object);
+            return default;
         }
 
         public static IEnumerable<IDataRecord> Execute(string expression, object component)
@@ -69,7 +69,7 @@ namespace System.Runtime
                 return r.GetValue(0);
             }
 
-            return default(object);
+            return default;
         }
     }
 }

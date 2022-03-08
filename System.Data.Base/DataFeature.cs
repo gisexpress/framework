@@ -45,6 +45,11 @@ namespace System.Data
         DataCommand iCommand;
         PropertyNodeCollection iProperties;
 
+        public IMapLayer Layer
+        {
+            get { return Command as IMapLayer; }
+        }
+
         public DataCommand Command
         {
             get { return (DataCommand)ParentNode ?? iCommand; }

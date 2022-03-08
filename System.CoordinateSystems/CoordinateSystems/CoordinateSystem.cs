@@ -55,7 +55,7 @@ namespace System.CoordinateSystems
                 return OnCreateTransform(target);
             }
 
-            return null;
+            return default;
         }
 
         protected abstract IMathTransform OnCreateTransform(ICoordinateSystem target);

@@ -13,10 +13,10 @@ namespace System.Data.Kml
     {
         public KmlMapLayer(XmlDocument document) : base(string.Empty, Constants.Xml.Folder, Constants.Xml.NamespaceURI, document)
         {
+            Crs = CoordinateSystemFactory.Create(4326);
         }
 
         KmlPlacemarkCollection Items;
-
         KmlPlacemarkCollection GetPlacemarks()
         {
             return Items ?? (Items = new KmlPlacemarkCollection(OwnerDocument) { ParentNode = this });
@@ -30,6 +30,11 @@ namespace System.Data.Kml
         public override bool StyleSupport
         {
             get { return true; }
+        }
+
+        protected override ICoordinateSystem OnFindCoordinateSystem()
+        {
+            return Crs;
         }
 
         public override IFeature FindFeature(object featureId)
@@ -52,7 +57,7 @@ namespace System.Data.Kml
             return new KmlPlacemark(OwnerDocument) { Command = this };
         }
 
-        public override IEnvelope GetBounds(ICoordinateSystem target)
+        public override IEnvelope GetBounds()
         {
             var e = default(IEnvelope);
 
@@ -73,7 +78,12 @@ namespace System.Data.Kml
                 }
             }
 
-            return e;
+            if (e == null)
+            {
+                return e;
+            }
+
+            return e.Transform(Transform);
         }
     }
 }

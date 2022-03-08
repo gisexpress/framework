@@ -153,7 +153,7 @@ namespace System.Runtime
         protected bool ReadFields(SelectOperator operand, ITokenEnumerator e)
         {
             var o = default(IExpressionOperator);
-            operand.Fields = OperandFactory.CreateOperatorCollection(operand);
+            operand.Fields = OperandFactory.Default.CreateOperatorCollection(operand);
 
             while (e.CanRead)
             {

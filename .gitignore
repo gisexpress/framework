@@ -3,3 +3,22 @@
 ################################################################################
 
 /System.Base/bin
+/System.Base/obj
+/System.CoordinateSystems/bin
+/System.CoordinateSystems/obj/Debug
+/System.Data.Base/bin
+/System.Data.Base/obj
+/System.Data.Dxf/obj
+/System.Data.Kml/obj/Debug
+/System.Data.Kml/bin
+/System.Runtime/bin
+/System.Resources/obj/Debug
+/System.Resources/bin
+/System.Geometries/obj/Debug
+/System.Geometries/bin
+/System.Security/obj/Debug
+/System.Security/bin
+/System.Workspace/obj/Debug
+/System.Workspace/bin
+/System.Runtime/obj/Debug
+/System.CoordinateSystems/obj/Release
